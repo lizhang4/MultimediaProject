@@ -1,0 +1,93 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+
+/* Section weapons list */
+
+
+
+.weapons .line{
+    border-top: 5px solid #2B2B2B;
+    width: 15%;
+}
+
+
+
+.weapons .card {
+    height: 400px;
+}
+
+
+.weapons .card .img {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.weapons .card .btn {
+    border: #2B2B2B solid 2px;   
+    color: #2B2B2B;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.weapons .card .btn:hover {
+    color: #F5F5F5;
+    background-color: #2B2B2B;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.pop-up {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up .pop-up-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F5F5F5;
+    color: #2B2B2B;
+    
+}
+.pop-up .pop-up-container .img {
+    width: 100%;
+    height: 50%;
+    /* background-image: url("./imgs/Qiang.jpg"); */
+    background-size: 100% 100%;
+}
+
+.pop-up .pop-up-container .box{
+    width: 80%;
+    height: 30%;
+    font-size: 1em;
+
+}
+
+.pop-up .pop-up-container i {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 3em;
+}
+
+
