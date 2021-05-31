@@ -1,7 +1,7 @@
 /// <reference path="./typings/globals/jquery/index.d.ts" />
 var weaponCard = $("#weapon-card-template").html();
 var weaponPopUp = $("#weapon-pop-up-template").html();
-
+//come here to walk around
 
         var templateCard = Handlebars.compile(weaponCard);
         var templatePopUp = Handlebars.compile(weaponPopUp);
