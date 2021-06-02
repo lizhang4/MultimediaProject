@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.submit{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #222;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login, .register{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.login.active , .register.active{
+    top: 50%;
+    opacity: 1;
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.close_login, .close_register{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+form input[type = "text"], form input[type = "password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+}
