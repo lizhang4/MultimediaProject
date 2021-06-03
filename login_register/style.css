@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login, .register{
+    position: fixed;
+    width: 380px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 30px 50px 30px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    /* transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms; */
+    transition: 200ms ease-in-out;
+}
+
+.login.active, .register.active{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    /* transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms; */
+}
+
+.login header, .reigster header{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+form input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}
+
+form .field .input-area{
+    position: relative;
+}
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake{
+    0%, 100%{
+        margin-left: 0;
+    }
+    20%, 80%{
+        margin-left: -12px;
+    }
+    40%, 60%{
+        margin-left: 12px;
+    }
+}
+
+form input::placeholder{
+    color: #bfbfbf;
+    font-size: 15px;
+}
+
+form .field i{
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field .icon{
+    left: 15px;
+    color: #bfbfbf;
+}
+
+form .field .error-icon{
+    right: 15px;
+    color: #dc3545;
+}
+
+form .field .error-text{
+    margin-top: 5px;
+    color: #dc3545;
+    text-align: left;
+}
+
+form .field .error{
+    display: none;
+}
+
+form .field.error .error{
+    display: block;
+}
+
+form .feild.error input{
+    border-color: #dc3545;
+}
+
+form .submit{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #222;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+/* .submit:hover{
+    background: #fff;
+} */
+
+.login_close, .register_close{
+    position: relative;
+    top: 0px;
+    left: 150px;
+    width: 15px;
+    height: 15px;
+    font-size: 25px;
+    border: none;
+    background-color: #fff;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.login_close:hover, .login_close:focus,
+.register_close:hover, .register_close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login_open{
+    margin-left: 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #222;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.register_open{
+    margin-right: 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #222;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+/* #overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+} */
