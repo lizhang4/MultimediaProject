@@ -22,9 +22,7 @@
     <section class="template">
         <!-- Nav Section -->
         <section class="nav d-flex justify-content-between align-items-center m-0">
-            <a href="index.html"> 
-                <img src="./imgs/Logo/LogoOnly.png" class="m-0" alt="">
-            </a>
+            <img src="./imgs/Logo/LogoOnly.png" class="m-0" alt="">
             <a href="#" class="m-0 login_open" id="Login-Button">Login</a>
         </section>
         <!-- Nav Section End-->
@@ -33,62 +31,19 @@
         <!-- Center Section -->
         <section class="center m-0 ">
             <div class="row m-0 h-100">
-                <!-- Left Section -->
                 <div class="col-1 m-0 d-flex flex-column justify-content-center align-items-start h-100">
-                    <a href="#" class="my-5 active" id="Home-Btn" onclick=AddActive(0)>Home</a>
-                    <a href="#" class="my-5" id="Category-Btn" onclick=AddActive(1)>Category</a>
-                    <a href="#" class="my-5" id="AboutUs-Btn" onclick=AddActive(2)>About Us</a>
+                    <a href="index.html" class="my-5 active">Home</a>
+                    <a href="category2.html" class="my-5">Category</a>
+                    <a href="aboutUs.html" class="my-5">About Us</a>
                 </div>
-                <!-- End Left Section -->
-
-                <!-- Middle Section -->
-                <div class="col-10 p-0 h-100 row box active" id="Home">
-                    <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5">
-                        <h1 class="text-uppercase mx-5" id="center-title">Luxury</h1>
-                        <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
-                    </div>
-                    <div class="col-5 img " id="center-image" style="background-image: url(./imgs/Carousels/Dao2.png);"></div>
-                </div>
-                
-                <div class="col-10 p-0 h-100 row box " id="About-Us">
-                    
-                    <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5">
-                        <h1 class="text-uppercase mx-5" id="center-title">About Us</h1>
-                        <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
-                    </div>
-                    <div class="col-5 img " id="center-image" style="background-image: url(./imgs/Carousels/Dao2.png);"></div>
-                    
-                </div>
-
-
-                <div class="col-10 p-0 h-100 row box " id="Category">
-                    
+                <div class="col-10 p-0 h-100 row box" id="center">
                     <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5">
                         <h1 class="text-uppercase mx-5" id="center-title">Category</h1>
                         <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
                     </div>
-                    <div class="col-5 img " id="center-image" style="background-image: url();"></div>
-        
+                    <div class="col-5 img " id="center-image" style="background-image: url({{pages.[0].imageUrl}});"></div>
                 </div>
-
-
-                <div class="col-10 p-0 h-100 row box " id="Category">
-                    
-                    <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5">
-                        <h1 class="text-uppercase mx-5" id="center-title">Category</h1>
-                        <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
-                    </div>
-                    <div class="col-5 img " id="center-image" style="background-image: url();"></div>
-        
-                </div>
-                <!-- End Middle Section -->
-
-
-
-                <!-- Right Section -->
                 <div class="col-1 m-0"></div>
-                <!-- End Right Section -->
-
             </div>
         </section>
 
@@ -101,7 +56,6 @@
         </section>
 
     </section>
-
 
 
 
@@ -187,7 +141,7 @@
 
 
     <script src="category.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="center.js"></script> -->
     <script src="./login_register/script.js"></script>
 </body>
 </html>
