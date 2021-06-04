@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/2cb5c720d7.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "./login_register/style.css">
     <link rel="stylesheet" href="category.css">
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="index.css">
@@ -21,7 +23,7 @@
         <!-- Nav Section -->
         <section class="nav d-flex justify-content-between align-items-center m-0">
             <img src="./imgs/Logo/LogoOnly.png" class="m-0" alt="">
-            <a href="#" class="m-0">Login</a>
+            <a href="#" class="m-0 login_open" id="Login-Button">Login</a>
         </section>
         <!-- Nav Section End-->
 
@@ -57,6 +59,74 @@
     </section>
 
 
+
+   
+    <div class = "login">
+        <button class = "login_close">&times;</button>
+        <header>Login &#9654</header>
+        <form id = "form1" action = "#">
+            <div class="field username">
+                <div class="input-area">
+                    <input type = "text" placeholder= "USERNAME">
+                    <i class = "icon fas fa-user-alt"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Username can't be blank</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type = "password" placeholder= "PASSWORD">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Password can't be blank</div>
+            </div>
+            <input type = "submit" value = "submit" class = "submit">
+        </form>
+    </div>
+
+    <div class = "register">
+        <button class = "register_close">&times;</button>
+        <header>Register &#9664</header>
+        <form id = "form2" action = "#">
+            <div class="field username">
+                <div class="input-area">
+                    <input type = "text" placeholder= "USERNAME">
+                    <i class = "icon fas fa-user-alt"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Username can't be blank</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type = "password" placeholder= "PASSWORD">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Password can't be blank</div>
+            </div>
+            <div class="field repassword">
+                <div class="input-area">
+                    <input type = "password" placeholder= "RE-ENTER PASSWORD">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Password can't be blank</div>
+            </div>
+            <div class="field email">
+                <div class="input-area">
+                    <input type = "text" placeholder= "EMAIL">
+                    <i class = "icon fas fa-envelope"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Email can't be blank</div>
+            </div>
+            <input type = "submit" value = "submit" class = "submit">
+        </form>
+    </div>
+   
+
+
     
     
 
@@ -64,5 +134,6 @@
 
 
     <script src="category.js"></script>
+    <script src="./login_register/script.js"></script>
 </body>
 </html>

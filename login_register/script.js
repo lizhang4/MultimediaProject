@@ -13,11 +13,15 @@ const rrpField = form2.querySelector(".repassword");
 const rrpInput = rrpField.querySelector("input");
 const reField = form2.querySelector(".email");
 const reInput = reField.querySelector("input");
-// const overlay = document.getElementById("overlay");
+const overlay = document.getElementById("overlay");
 
 document.querySelector(".login_open").addEventListener("click", () => {
+    console.log("Clicked");
     document.querySelector(".login").classList.add("active");
 });
+
+
+
 document.querySelector(".login_close").addEventListener("click", () =>{
     document.querySelector(".login").classList.remove("active");
 });
@@ -69,9 +73,9 @@ form.onsubmit = (u) =>{
 // let errortext = eField.querySelector(".error-text");
 // (eInput.value != "")? errortext.innerText = "enter a valid email address" : errortext.innerText = "Email can't be blank"
 
-document.querySelector(".register_open").addEventListener("click", () => {
-    document.querySelector(".register").classList.add("active");
-});
+// document.querySelector(".register_open").addEventListener("click", () => {
+//     document.querySelector(".register").classList.add("active");
+// });
 document.querySelector(".register_close").addEventListener("click", () =>{
     document.querySelector(".register").classList.remove("active");
 });
