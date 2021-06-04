@@ -10,7 +10,7 @@
 }
 
 .carousel .navbar .nav-box {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -19,8 +19,22 @@
     
 }
 
+.carousel .navbar img{
+    width: 60%;
+    
+}
+
+
 .carousel .navbar a{
     color: #F5F5F5F5;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.carousel .navbar a.active{
+    color: #EE6557;
+    
 }
 
 .carousel {
@@ -46,7 +60,7 @@
 
 
 .carousel-bottom .carousel-box {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -66,14 +80,34 @@
     font-family: 'Niramit', sans-serif;
 }
 
+.carousel .carousel-bottom p {
+    font-size: 1rem;
+    color: rgb(255, 255, 255, 80%);
+    border-left: #EE6557 solid 3px;
+    width: 40%;
+    margin-bottom: 50px;
+
+}
+
 
 
 .carousel .carousel-bottom .btn {
-    width: 150px;
-    height: 50px;
-    padding-top: 7px;
+    width: 170px;
+    height: 55px;
+    padding-top: 10px;
     font-size: 1.5rem;
     background-color: #EE6557;
+}
+
+.carousel .carousel-bottom .btn:nth-child(2) {
+    width: 170px;
+    height: 55px;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    border: #EE6557 solid 2px;
+    color: #EE6557;
+    background-color: unset;
+    
 }
 
 .carousel .corousel-inner .container .btn:hover {
