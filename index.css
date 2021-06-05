@@ -102,6 +102,22 @@ body {
     font-size: 0.8rem;
 }
 
+.center .icon-up {
+    /* width: 100%; */
+    /* border: #2B2B2B solid 1px; */
+    position: fixed;
+    top: 15%;
+    left: 50%;
+}
+
+.center .icon-down{
+    position: fixed;
+    top: 85%;
+    left: 50%;
+}
+
+
+
 .bottom {
     height: 10vh;
 }
