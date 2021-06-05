@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href = "./login_register/style.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Document</title>
+    
+
+    <script src="https://kit.fontawesome.com/2cb5c720d7.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="handlebars-v4.7.7.js"></script>
+    
+
+</head>
+<body>
+    <section class="template">
+        <!-- Nav Section -->
+        <section class="nav d-flex justify-content-between align-items-center m-0">
+            <a href="index.html"> 
+                <img src="./imgs/Logo/LogoOnly.png" class="m-0" alt="">
+            </a>
+            <a href="#" class="m-0 login_open" id="Login-Button">Login</a>
+        </section>
+        <!-- Nav Section End-->
+
+
+        <!-- Center Section -->
+        <section class="center m-0 ">
+            <div class="row m-0 h-100">
+                <!-- Left Section -->
+                <div class="col-1 m-0 d-flex flex-column justify-content-center align-items-start h-100">
+                    <a href="index.html" class="my-5" id="Home-Btn">Home</a>
+                    <a href="category2.html" class="my-5" id="Category-Btn" >Category</a>
+                    <a href="aboutUs.html" class="my-5" id="AboutUs-Btn" >About Us</a>
+                </div>
+                <!-- End Left Section -->
+                
+                <!-- Weapon display page -->
+
+                <div class="col-10 p-0 h-100 row box Sword active" id="Sword">
+                    <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5">
+                        <h1 class="text-uppercase mx-5" id="center-title">Sword</h1>
+                        <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
+                        <div class="icon-down m-0 p-0" id="Category-Down" onclick="PageDown('Sword')" style="cursor: pointer;">
+                            <i class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+                        </div>
+                    </div>
+                    <div class="col-5 img " id="center-image" style="background-image: url(./imgs/Carousels/Dao2.png);"></div>
+                </div>
+
+
+
+
+                <div class="col-10 p-0  h-100 row box d-flex flex-column justify-content-center align-items-center Sword" id="Sword">
+                    <div class=" icon-up m-0 p-0" id="Category-Up" onclick="PageUp('Sword')" style="cursor: pointer;">
+                        <i class="fas fa-angle-double-up"></i>
+                    </div>
+
+
+                    <div class="row g-3 m-0 p-0" id="weapon-list">
+
+                    </div>
+
+
+                    <!-- <div class="icon-down m-0 p-0" id="Category-Down" onclick="PageDown('Sword')" style="cursor: pointer;">
+                        <i class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+                    </div> -->
+
+                </div>
+
+                <!-- End Weapon display page-->
+
+
+
+                <!-- End Middle Section -->
+
+
+
+                <!-- Right Section -->
+                <div class="col-1 m-0"></div>
+                <!-- End Right Section -->
+
+            </div>
+        </section>
+
+
+        <!-- Center Section End-->
+
+
+        <section class="bottom">
+
+        </section>
+
+       
+
+    </section>
+
+
+    
+
+
+
+    <script id="weapon-card-template" type="text/x-handlebars-template">
+        {{#each weapons}}
+            <div class="col-3  ">
+                <div class="card w-100 ">
+                    <div class="img " style="background-color: bisque; height: 250px;" ></div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+
+    <script id="weapon-page-template" type="text/x-handlebars-template">
+
+        <div class="col-10 p-0  h-100 row box d-flex flex-column justify-content-center align-items-center Sword" id="Sword">
+            <div class=" icon-up m-0 p-0" id="Category-Up" onclick="PageUp('Sword')" style="cursor: pointer;">
+                <i class="fas fa-angle-double-up"></i>
+            </div>
+
+
+            <div class="row g-3 m-0 p-0" id="weapon-list">
+
+            </div>
+
+
+            <div class="icon-down m-0 p-0" id="Category-Down" onclick="PageDown('Sword')" style="cursor: pointer;">
+                <i class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+            </div>
+
+        </div>
+    
+    </script>
+
+
+
+    
+
+
+    
+    
+
+    
+
+
+    <script src="category.js"></script>
+    <script src="exhibition.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="./login_register/script.js"></script> -->
+</body>
+</html>

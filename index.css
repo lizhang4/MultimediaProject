@@ -107,14 +107,16 @@ body {
     /* border: #2B2B2B solid 1px; */
     position: fixed;
     top: 15%;
-    left: 50%;
+    left: 49.7%;
 }
 
 .center .icon-down{
     position: fixed;
-    top: 85%;
-    left: 50%;
+    top: 84%;
+    left: 49.7%;
 }
+
+
 
 
 

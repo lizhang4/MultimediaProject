@@ -39,20 +39,93 @@
             <div class="row m-0 h-100">
                 <!-- Left Section -->
                 <div class="col-1 m-0 d-flex flex-column justify-content-center align-items-start h-100">
-                    <a href="index.css" class="my-5 active" id="Home-Btn">Home</a>
-                    <a href="category2.html" class="my-5" id="Category-Btn" >Category</a>
+                    <a href="index.html" class="my-5" id="Home-Btn">Home</a>
+                    <a href="category2.html" class="my-5 active" id="Category-Btn" >Category</a>
                     <a href="aboutUs.html" class="my-5" id="AboutUs-Btn" >About Us</a>
                 </div>
                 <!-- End Left Section -->
 
                 <!-- Middle Section -->
-                <div class="col-10 p-0 h-100 row box active" id="Home">
-                    <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5">
-                        <h1 class="text-uppercase mx-5" id="center-title">Luxury</h1>
+                
+
+               
+                <!-- Category Page 1 -->
+                <div class="col-10 p-0 h-100 box d-flex flex-column justify-content-center align-items-start active Category" id="Category">
+                    
+                    <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5 h-75 mb-5" >
+                        <h1 class="text-uppercase mx-5" id="center-title">Category</h1>
                         <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
                     </div>
-                    <div class="col-5 img " id="center-image" style="background-image: url(./imgs/Carousels/Dao2.png);"></div>
+                    <!-- <div class="col-5 img " id="center-image" style="background-image: url();"></div> -->
+
+                    <div class="icon-down m-0 p-0" id="Category-Down" onclick="PageDown('Category')" style="cursor: pointer;">
+                        <i class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+                    </div>
+        
                 </div>
+
+                <!-- End Category Page 1 -->
+
+                <!-- Category Page 2 -->
+                <div class="col-10 p-0 h-100 row box d-flex justify-content-center align-items-center Category" id="Category">
+                    
+                    <div class=" icon-up m-0 p-0" id="Category-Up" onclick="PageUp('Category')" style="cursor: pointer;">
+                        <i class="fas fa-angle-double-up"></i>
+                    </div>
+                    <div class="container">
+                        <div class="slider d-flex owl-carousel flex-column">
+                            <div class="card m-3 p-0 ">
+                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
+                                <div class="content">
+                                    <div class="title">Someone</div>
+                                    <div class="sub-title">Desp</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
+                                    <a class="btn" href="exhibition.html">
+                                        <button>read more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card m-3 p-0">
+                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
+                                <div class="content">
+                                    <div class="title">Someone</div>
+                                    <div class="sub-title">Desp</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
+                                    <a class="btn" href="exhibition.html">
+                                        <button>read more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card m-3 p-0">
+                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
+                                <div class="content">
+                                    <div class="title">Someone</div>
+                                    <div class="sub-title">Desp</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
+                                    <a class="btn" href="exhibition.html">
+                                        <button>read more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card m-3 ">
+                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
+                                <div class="content">
+                                    <div class="title">Someone</div>
+                                    <div class="sub-title">Desp</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
+                                    <a class="btn" href="exhibition.html">
+                                        <button>read more</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+                </div>
+                <!-- End Category Page 2 -->
+
 
                 <!-- End Middle Section -->
 
