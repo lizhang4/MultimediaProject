@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" integrity="sha512-eeBbzvdY28BPYqEsAv4GU/Mv48zr7l0cI6yhWyqhgRoNG3sr+Q2Fr6751bA04Cw8SGUawtVZlugHm5H1GOU/TQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href = "./login_register/style.css">
     <link rel="stylesheet" href="category.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="carousel.css">
+    
     <title>Document</title>
     
 
@@ -19,6 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="handlebars-v4.7.7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js" integrity="sha512-sAHYBRXSgMOV2axInO6rUzuKKM5SkItFLlLHQ8YjRD+FBwowtATOs4njP9oim3/MzyAGrB52SLDjpAOLcOT9TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     
 
 </head>
@@ -50,81 +55,69 @@
 
                
                 <!-- Category Page 1 -->
-                <div class="col-10 p-0 h-100 box d-flex flex-column justify-content-center align-items-start active Category" id="Category">
-                    
-                    <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5 h-75 mb-5" >
-                        <h1 class="text-uppercase mx-5" id="center-title">Category</h1>
-                        <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
-                    </div>
-                    <!-- <div class="col-5 img " id="center-image" style="background-image: url();"></div> -->
+                
+                
 
-                    <div class="icon-down m-0 p-0" id="Category-Down" onclick="PageDown('Category')" style="cursor: pointer;">
-                        <i class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+                <div class="col-10 p-0 h-100 box  active Category" id="Category">
+                    <div class="mySwiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Page 1 -->
+                            <div class="swiper-slide d-flex flex-column justify-content-center align-items-start">
+                                <div class="col-7 d-flex flex-column justify-content-center align-items-start px-5 h-75 mb-5" >
+                                    <h1 class="text-uppercase mx-5" id="center-title">Category</h1>
+                                    <p class="mx-5" id="center-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quasi eveniet nisi eum animi neque modi debitis saepe, fugiat excepturi natus dignissimos illo ratione amet perspiciatis facilis iure nesciunt ducimus.</p>
+                                </div>
+            
+                                <div class="icon-down m-0 p-0 align-self-center" id="Category-Down" onclick="PageDown('Category')" style="cursor: pointer;">
+                                    <i class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+                                </div>
+
+                            </div>
+
+                            <!-- Page 2 -->
+                            <div class="swiper-slide d-flex flex-column justify-content-center align-items-start">
+                                <div class=" icon-up m-0 p-0 align-self-center" id="Category-Up" onclick="PageUp('Category')" style="cursor: pointer;">
+                                    <i class="fas fa-angle-double-up"></i>
+                                </div>
+                                <div class="container">
+                                    <div #swiperRef="" class="swiper-container mySwiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide d-flex flex-column align-items-center justify-content-center">
+                                                Slide 1 
+                                                <a href="exhibition.html">Learn More</a>
+                                            </div>
+                                            <div class="swiper-slide d-flex flex-column align-items-center justify-content-center">
+                                                Slide 2 
+                                                <a href="exhibition.html">Learn More</a>
+                                            </div>
+                                            <div class="swiper-slide d-flex flex-column align-items-center justify-content-center">
+                                                Slide 3 
+                                                <a href="exhibition.html">Learn More</a>
+                                            </div>
+                                            <div class="swiper-slide d-flex flex-column align-items-center justify-content-center">
+                                                Slide 4 
+                                                <a href="exhibition.html">Learn More</a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                      </div>
+                                        
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+
                     </div>
         
                 </div>
 
                 <!-- End Category Page 1 -->
-
-                <!-- Category Page 2 -->
-                <div class="col-10 p-0 h-100 row box d-flex justify-content-center align-items-center Category" id="Category">
-                    
-                    <div class=" icon-up m-0 p-0" id="Category-Up" onclick="PageUp('Category')" style="cursor: pointer;">
-                        <i class="fas fa-angle-double-up"></i>
-                    </div>
-                    <div class="container">
-                        <div class="slider d-flex owl-carousel flex-column">
-                            <div class="card m-3 p-0 ">
-                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
-                                <div class="content">
-                                    <div class="title">Someone</div>
-                                    <div class="sub-title">Desp</div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
-                                    <a class="btn" href="exhibition.html">
-                                        <button>read more</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card m-3 p-0">
-                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
-                                <div class="content">
-                                    <div class="title">Someone</div>
-                                    <div class="sub-title">Desp</div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
-                                    <a class="btn" href="exhibition.html">
-                                        <button>read more</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card m-3 p-0">
-                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
-                                <div class="content">
-                                    <div class="title">Someone</div>
-                                    <div class="sub-title">Desp</div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
-                                    <a class="btn" href="exhibition.html">
-                                        <button>read more</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card m-3 ">
-                                <div class="img"><img src="imgs/Qiang.jpg" class="w-100" alt=""></div>
-                                <div class="content">
-                                    <div class="title">Someone</div>
-                                    <div class="sub-title">Desp</div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur recusandae aliquam laborum saepe temporibus culpa cupiditate eaque delectus ad natus optio voluptate obcaecati maxime nostrum, et repellendus? Enim, eveniet.</p>
-                                    <a class="btn" href="exhibition.html">
-                                        <button>read more</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    
-                </div>
-                <!-- End Category Page 2 -->
 
 
                 <!-- End Middle Section -->
@@ -149,6 +142,8 @@
        
 
     </section>
+
+  
 
 
 
@@ -239,32 +234,31 @@
     <script src="./login_register/script.js"></script>
 
     <script>
-        
-        
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                500:{
-                    items:3
-                },
-                
-            }
-        })
-        $(".owl-nav").addClass("align-self-center p-0");
-        $(".owl-prev").html("<i class=\"fas fa-caret-left fa-3x mx-5\" ></i>");
-        $(".owl-next").html("<i class=\"fas fa-caret-right fa-3x mx-5\"></i>");
+        var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 
-    <!-- <script>
-        $(".slider").owlCarousel({
-            loop:true,
-            autoplay:true,
-        })
-    </script> -->
 </body>
 </html>
