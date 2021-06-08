@@ -25,6 +25,24 @@ function RemoveActive() {
     categoryBtn.removeClass("active");
     aboutUsBtn.removeClass("active");
     homeBtn.removeClass("active");
+
+}
+
+var distance = 1214;
+
+function AddActive(pageID) {
+    RemoveActive();
+    if (pageID == "Home") {
+        homeBtn.addClass("active");
+    }
+    if (pageID == "Category") {
+        categoryBtn.addClass("active");
+        
+        
+    }
+    if (pageID == "About-Us") {
+        aboutUsBtn.addClass("active");
+    }
 }
 
 function ChangePage(pageType){
