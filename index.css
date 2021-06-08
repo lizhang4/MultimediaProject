@@ -115,17 +115,21 @@ body {
 
 
 .center h1{
-    font-size: 6.5rem;
+    font-size: 6rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
     color: #2B2B2B;
+    opacity: 95%;
 }
 
 .center p {
     border-left: #EE6557 solid 2px;
     padding-left: 10px;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     width: 70%;
+    font-weight: 300;
+    opacity: 90%;
+
 }
 
 

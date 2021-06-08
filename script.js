@@ -37,8 +37,6 @@ function AddActive(pageID) {
     }
     if (pageID == "Category") {
         categoryBtn.addClass("active");
-        
-        
     }
     if (pageID == "About-Us") {
         aboutUsBtn.addClass("active");

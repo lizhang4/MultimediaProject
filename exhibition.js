@@ -45,11 +45,6 @@ var weapons = [
         imageUrl: "./imgs/53a7f5bc8eef5133b63af57f3558169c.jpg",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
     },
-    {
-        name: "Silver Dao",
-        imageUrl: "./imgs/53a7f5bc8eef5133b63af57f3558169c.jpg",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
-    },
     
 ];
 
