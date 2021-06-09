@@ -181,14 +181,27 @@ body {
 
 .center .icon-down {
     position: absolute;
-    left: 50%;
-    top: 95%;
+    left: 0%;
+    top: 90%;
+    width: 100%;
 }
+
+.center .icon-down h5 {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
 
 .center .icon-up {
     position: absolute;
-    left: 50%;
+    left: 0%;
     top: 5%;
+    width: 100%;
+}
+
+.center .icon-up h5 {
+    font-size: 1rem;
+    opacity: 0.7;
 }
 
 .social-bar{
