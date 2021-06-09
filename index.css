@@ -40,21 +40,32 @@ body {
 
 .nav {
     height: 100%;
-    width: 90%;
+    width: 92%;
     margin: 0 auto !important;
+    /* border: #2B2B2B solid 2px; */
 }
 
 .nav img {
-    width: 45px;
+    width: 80%;
     padding: 0;
     margin: 0%;
+    /* border: #2B2B2B solid 2px; */
+    
 }
 
 .nav a {
+    
     text-decoration: none;
     color: #C4C4C4;
     font-weight: 500;
 
+
+}
+
+.nav a p{
+    width: min-content;
+    margin: 0;
+    padding: 0;
 }
 
 .nav a.active {
@@ -63,7 +74,7 @@ body {
 
 }
 
-.nav a.login_open {
+.nav a p {
     color: #EE6557;
     font-weight: 600;
 
@@ -94,24 +105,11 @@ body {
     /* display: none !important; */
     
     /* width: 80% !important; */
-    width: 80%;
+    width: 70%;
     height: 80%;
     background-color: white;
 }
 
-
-
-.center .img {
-    /* background-image: url('./imgs/Carousels/Dao2.png'); */
-    background-size: cover;
-    background-position: -250px;
-}
-
-/* .center .box .inner-box {
-    margin: 0px 20px !important;
-    border: #2B2B2B solid 2px;
-
-} */
 
 
 .center h1{
@@ -123,28 +121,26 @@ body {
 }
 
 .center p {
-    border-left: #EE6557 solid 2px;
+    border-left: #2B2B2B solid 2px;
     padding-left: 10px;
     font-size: 0.75rem;
-    width: 70%;
+    width: 80%;
     font-weight: 300;
     opacity: 90%;
+    /* border: #2B2B2B solid 2px; */
 
 }
 
 
-/* .center .icon-up {
-    
-    position: fixed;
-    top: 15%;
-    left: 49.7%;
+.center .side-box .img {
+    height: 170px;
+    width: 170px;
+    background-color: antiquewhite;
+    background-size: cover;
 }
 
-.center .icon-down{
-    position: fixed;
-    top: 84%;
-    left: 49.7%;
-} */
+
+/* Page Category */
 
 .center .container .swiper-container{
     width: 100%;
@@ -173,12 +169,9 @@ body {
       align-items: center;
 }
 
-/* :::-webkit-scrollbar{
-    display: none;
-} */
 
 .center .inner-container .side-box {
-    width: 400px;
+    width: 430px;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -208,7 +201,7 @@ body {
 }
 
 .social-innerbar {
-    width: 90%;
+    width: 92%;
     height: 100%;
     /* border: #2B2B2B solid 2px; */
     margin: 0 auto;
