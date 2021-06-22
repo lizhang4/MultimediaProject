@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 
 }
@@ -15,14 +15,17 @@
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    border: black solid 2px;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+
 }
 
 .template .top-carousel{
     height: 100vh;
-    background: url("./imgs/Carousels/carousel.jpg");
+    background: url("./imgs/Carousels/Background.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    /* object-fit: fill; */
     margin: 0 auto;
     background-color: black;
     
@@ -42,15 +45,15 @@
     width: 98%;
 }
 .template .top-carousel .nav .logo a{
-    color: #614BFA;
-    font-size: 2rem;
+    color: white;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 } 
 
 .template .top-carousel .nav div a{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
 }
@@ -58,28 +61,38 @@
 .template .top-carousel .nav div a.active {
     color: #614BFA;
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .template .top-carousel .nav a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
 }
 
+.template .top-carousel .nav .fa-bars {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    z-index: 5;
+}
+
+.template .top-carousel .nav i:hover {
+    cursor: pointer;
+}
 /* .template .top-carousel .nav a */
 
 .template .top-carousel .carousel-content {
     color: white;
     width: 70%;
     height: 85vh;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-bottom: 10px;
 }
 
 .template .top-carousel .carousel-content .box{
-    width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .template .exhibition-content{
@@ -91,63 +104,136 @@
     z-index: 2;
 }
 
-.template .top-carousel .carousel-content .box-upper {
-    
-    width: 100%;
-    margin-top: 100px;
-}
-
-
-.template .top-carousel .carousel-content .line {
-    border-bottom: white solid 2px;
-    width: 10%;
-    margin: 0 5%;
-    height: 40%;
-    opacity: 80%;
-}
-
-.template .top-carousel .carousel-content h4{
-    font-weight: 300;
-    opacity: 90%;
-}
 
 .template .top-carousel .carousel-content h1{
-    font-size: 11.5rem;
-    font-weight: 600;
-    font-family: 'Merriweather Sans', sans-serif;
-    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: 500;
+    opacity: 0.95;
+    /* font-family: 'Merriweather Sans', sans-serif; */
+    /* margin: 0 auto; */
 }
 
 .template .top-carousel .carousel-content p{
-    width: 65%;
-    margin: 0 auto;
-    font-size: 1.2rem;
+    width: 100%;
+    font-size: 1.4rem;
     font-weight: 300;
     opacity: 80%;
 }
 
-.template .top-carousel .carousel-content button {
-    width:  170px;
-    height: 60px;
-    border-radius: 50px;
+.template .top-carousel .carousel-content .btn-contact {
+    width: 60%;
+
+}
+
+.template .top-carousel .carousel-content button{
+    height: 50px;
+}
+
+.template .top-carousel .carousel-content button:nth-child(1) {
+    width:  120px;
     border: none;
-    margin: 50px auto;
-    background-color: white;
-    box-shadow: 0px 0px 5px 1px #E4E4E4;
+    background-color: #614BFA;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.template .top-carousel .carousel-content button:nth-child(2) {
+    width:  220px;
+    border: white solid 2px;
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.template .top-carousel .carousel-content button i {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.template .top-carousel .carousel-content .btn-contact h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* height: 100%; */
+    transition: background-color ease-in-out;
+
+}
+
+/* .template .top-carousel .carousel-content .btn-contact h4:hover {
+    background-color: #614BFA;
+    transition: background-color ease-in-out;
+} */
+
+.template .top-carousel .carousel-content button a{
+    text-decoration: none;
     color: #614BFA;
     font-weight: 500;
     font-size: 1.25rem;
-
 }
 
 .template .top-carousel .carousel-content .fa-chevron-down {
     color: white; 
     font-size: 2rem;
     
-    margin-top: 50px;
-    margin-bottom: 0;
+    
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateY(-50%);
     
 }
+
+.nav-button {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.192);
+    z-index: 5;
+    display: none;
+}
+
+.nav-button .inner-content {
+    height: 100%;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+}
+
+.nav-button .inner-content .inner-content-box {
+    height: 40%;
+    width: 70%;
+}
+
+.nav-button .inner-content .inner-content-box a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.nav-button .inner-content .inner-content-box a:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+    cursor: pointer;
+}
+
+
+
+.nav-button .inner-content i.close {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    cursor: pointer;
+    justify-self: flex-start;
+}
+
+
+
 
 
 
@@ -181,9 +267,19 @@
 
 .exhibition-content:nth-child(even) .exhibition-content-right h3, .exhibition-content:nth-child(odd) .exhibition-content-left h3 {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 400;
     opacity: 90%;
     margin-top: 20px;
+    color: #614BFA;
+
+}
+
+.exhibition-content:nth-child(even) .exhibition-content-right h3 i, .exhibition-content:nth-child(odd) .exhibition-content-left h3 i{
+    font-size: 1.5rem;
+}
+
+.exhibition-content:nth-child(even) .exhibition-content-right h3 span, .exhibition-content:nth-child(odd) .exhibition-content-left h3 span{
+    font-size: 1.3rem;
 }
 
 .exhibition-content:nth-child(even) .exhibition-content-right p, .exhibition-content:nth-child(odd) .exhibition-content-left p {
@@ -205,6 +301,52 @@
     font-weight: 500;
     font-size: 1.25rem;
 }
+
+.exhibition-content .exhibition-content-right .info-box {
+    width: 120%;
+    height: 70%;
+    
+}
+
+.exhibition-content .exhibition-content-right .info-box .info-box-content {
+    width: 50%;
+    height: 50%;
+    color: #614BFA;
+    
+}
+
+
+.exhibition-content .exhibition-content-right .info-box .info-box-content i {
+    font-size: 3rem;
+}
+
+.exhibition-content .exhibition-content-right .info-box .info-box-content h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+}
+
+.exhibition-content .exhibition-content-right .info-box .info-box-content h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.exhibition-content .exhibition-content-left .contact-info h4 span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #614BFA;
+}
+
+.exhibition-content .exhibition-content-left .contact-info h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.exhibition-content .exhibition-content-left .contact-info i {
+    font-size: 2rem;
+    color: #614BFA;
+}
+
 
 .category {
     height: 100vh;
@@ -281,6 +423,8 @@
     display: none;
     /* opacity: 0; */
 }
+
+
 
 .pop-up-content .inner-content {
     height: 75%;
