@@ -152,7 +152,7 @@
     <!-- Login Form -->
     <div class = "login">
         <button class = "login_close">&times;</button>
-        <header>Login &#9654</header>
+        <header>Login</header>
         <form id = "form1" action = "#">
             <div class="field username">
                 <div class="input-area">
@@ -172,9 +172,57 @@
             </div>
             <input type = "submit" value = "submit" class = "submit">
         </form>
+        <button class = "register_open register-open-button">Register?</button>
+
+
     </div>
     <!-- End Login Form -->
 
+
+    <!-- Register Form -->
+    <div class = "register">
+        <button class = "register_close">&times;</button>
+        <header>Register</header>
+        <form id = "form2" action = "#">
+            <div class="field username">
+                <div class="input-area">
+                    <input type = "text" placeholder= "USERNAME">
+                    <i class = "icon fas fa-user-alt"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Username can't be blank</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type = "password" placeholder= "PASSWORD">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Password can't be blank</div>
+            </div>
+            <div class="field repassword">
+                <div class="input-area">
+                    <input type = "password" placeholder= "RE-ENTER PASSWORD">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Password can't be blank</div>
+            </div>
+            <div class="field email">
+                <div class="input-area">
+                    <input type = "text" placeholder= "EMAIL">
+                    <i class = "icon fas fa-envelope"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-text">Email can't be blank</div>
+            </div>
+            <input type = "submit" value = "submit" class = "submit">
+        </form>
+
+        <button class = "login-button login-open-button">Login?</button>
+
+    </div>
+    <!-- End Register Form -->
 
     <!-- Swiper JS -->
     <script>
