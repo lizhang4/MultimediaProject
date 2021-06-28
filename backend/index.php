@@ -151,14 +151,22 @@
                         data: $("#register_form").serialize(),
                         success:function(data)
                         {
-                            if(data == 'Yes')
+                            if(data == '1')
                             {
-                                $("#register_form").hide();
+                                $('#register_form').hide();
                                 location.reload();
+                            }
+                            else if(data == '2')
+                            {
+                                alert('registered username');
+                            }
+                            else if(data == '3')
+                            {
+                                alert("password not match");
                             }
                             else
                             {
-                                alert("all fields are required");
+                                alert('field are required');
                             }
                         }
                     });

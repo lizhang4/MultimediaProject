@@ -3,11 +3,13 @@
 
     $con = mysqli_connect('localhost','root','','test');
 
+    //check connection
     if(!$con)
     {
         die('failed to connect');
     }
 
+    //login
     if(isset($_POST['username']))
     {
         $username = $_POST['username'];
@@ -57,27 +59,43 @@
         }
     }
 
+    //logout
     if(isset($_POST['action']))
     {
         unset($_SESSION['username']);
     }
 
+    //register
     if(isset($_POST['reg_username']))
     {
         $username = $_POST['reg_username'];
         $password = $_POST['password'];
         $repassword = $_POST['repassword'];
         $email = $_POST['email'];
-
+    
         if(!empty($username) && !empty($password) && !is_numeric($username) && !empty($repassword) && !empty($email))
         {
-            $query = "insert into user (username, password, repassword, email) values ('$username', '$password', '$repassword', '$email')";
-            mysqli_query($con, $query);
-            echo 'Yes';
+            $query1 = "select * from user where username = '$username' limit 1";
+            $result1 = mysqli_query($con, $query1);
+            if(mysqli_num_rows($result1) == 0 && ($password == $repassword))
+            {
+                $query = "insert into user (username, password, repassword, email) values ('$username', '$password', '$repassword', '$email')";
+                mysqli_query($con, $query);
+                $_SESSION['username'] = $username;
+                echo '1';// success
+            }
+            else if(mysqli_num_rows($result1) > 0)
+            {
+                echo '2';//registered username
+            }
+            else
+            {
+                echo '3';//password not match
+            }
         }
         else
         {
-            echo 'No';
+            echo '4';//field are required
         }
     }
 ?>
