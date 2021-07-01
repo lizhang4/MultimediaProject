@@ -108,7 +108,7 @@
     <div class = "login">
         <button class = "login_close">&times;</button>
         <header>Login</header>
-        <form id = "form1" action = "#">
+        <form id = "form1" action = "./includes/login.inc.php" method="POST">
             <div class="field username">
                 <div class="input-area">
                     <input type = "text" placeholder= "USERNAME">
@@ -125,7 +125,7 @@
                 </div>
                 <div class="error error-text">Password can't be blank</div>
             </div>
-            <input type = "submit" value = "submit" class = "submit">
+            <input type = "submit" value = "submit" class = "submit" name="submit">
         </form>
         <button class = "register_open register-open-button">Register?</button>
 
@@ -135,13 +135,15 @@
 
 
     <!-- Register Form -->
+
+
     <div class = "register">
         <button class = "register_close">&times;</button>
         <header>Register</header>
-        <form id = "form2" action = "#">
+        <form id = "form2" action = "./action.php" method="post">
             <div class="field username">
                 <div class="input-area">
-                    <input type = "text" placeholder= "USERNAME">
+                    <input type = "text" id="#username" name="uid" placeholder= "USERNAME">
                     <i class = "icon fas fa-user-alt"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
@@ -149,7 +151,7 @@
             </div>
             <div class="field password">
                 <div class="input-area">
-                    <input type = "password" placeholder= "PASSWORD">
+                    <input type = "password" name="pwd" placeholder= "PASSWORD">
                     <i class = "icon fas fa-lock"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
@@ -157,7 +159,7 @@
             </div>
             <div class="field repassword">
                 <div class="input-area">
-                    <input type = "password" placeholder= "RE-ENTER PASSWORD">
+                    <input type = "password" name="pwdrepeat" placeholder= "RE-ENTER PASSWORD">
                     <i class = "icon fas fa-lock"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
@@ -165,18 +167,22 @@
             </div>
             <div class="field email">
                 <div class="input-area">
-                    <input type = "text" placeholder= "EMAIL">
+                    <input type = "text" name="email" placeholder= "EMAIL">
                     <i class = "icon fas fa-envelope"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
                 <div class="error error-text">Email can't be blank</div>
             </div>
-            <input type = "submit" value = "submit" class = "submit">
+            <button type="submit" name="submit" class="submit"></button>
         </form>
 
         <button class = "login-button login-open-button">Login?</button>
 
+        <div id="uname_response"></div>
+
+
     </div>
+
     <!-- End Register Form -->
 
     <!-- Swiper JS -->
@@ -239,6 +245,95 @@
 
     <!-- Handlebars JS template -->
 
+    <script>
+            $(document).ready(function(){
+                // $('#login_form').submit(function(e){
+                //     $.ajax({
+                //         type: "POST",
+                //         url: "action.php",
+                //         data: $("#login_form").serialize(),
+                //         success:function(data)
+                //         {
+                //             if(data == '1')
+                //             {
+                //                 $('#login_form').hide();
+                //                 location.reload();
+                //             }
+                //             else if(data == '2')
+                //             {
+                //                 alert('wrong password');
+                //             }
+                //             else if(data == '3')
+                //             {
+                //                 alert('no such data please register');
+                //                 location.reload();
+                //             }
+                //             else if(data == '4')
+                //             {
+                //                 alert('password is blank');
+                //             }
+                //             else if(data == '5')
+                //             {
+                //                 alert('username is blank');
+                //             }
+                //             else if(data == '6')
+                //             {
+                //                 alert('both field are required');
+                //             }
+                //             else
+                //             {
+                //                 alert('error');
+                //             }
+                //         }
+                //     });
+                //     e.preventDefault();
+                // });
+
+                // $('#logout').click(function(){
+                //     var action = 'logout';
+                //     $.ajax({
+                //         url: "action.php",
+                //         method: "POST",
+                //         data: {action:action},
+                //         success:function()
+                //         {
+                //             location.reload();
+                //         }
+                //     });
+                // });
+
+                $('#form2').submit(function(e){
+                    $.ajax({
+                        type: "POST",
+                        url: "action.php",
+                        data: $("#form2").serialize(),
+                        success:function(data)
+                        {
+                            if(data == '1')
+                            {
+                                $('#form2').hide();
+                                location.reload();
+                            }
+                            else if(data == '2')
+                            {
+                                alert('registered username');
+                            }
+                            else if(data == '3')
+                            {
+                                alert("password not match");
+                            }
+                            else
+                            {
+                                alert('field are required');
+                            }
+
+                        }
+                    });
+                    e.preventDefault();
+                });
+            });
+
+</script>
 
 
 <?php

@@ -1,4 +1,4 @@
-/// <reference path="../typings/globals/jquery/index.d.ts" />
+/// <reference path="../../typings/globals/jquery/index.d.ts" />
 
 Handlebars.registerHelper('lesserThan', function (v1, v2, options) {
     'use strict';

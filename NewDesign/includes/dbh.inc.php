@@ -6,4 +6,8 @@ $dbPassword = "";
 $dBName = "multimediaProject";
 
 
-// $conn = 
+$conn = mysqli_connect($serverName, $dBUsername, $dbPassword, $dBName);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
