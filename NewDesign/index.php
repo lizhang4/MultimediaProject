@@ -140,14 +140,14 @@
     <div class = "register">
         <button class = "register_close">&times;</button>
         <header>Register</header>
-        <form id = "form2" action = "./action.php" method="post">
+        <form id = "form2" action = "./action.php" method="post" onsubmit="return registrationErrorHandler()">
             <div class="field username">
                 <div class="input-area">
                     <input type = "text" id="#username" name="uid" placeholder= "USERNAME">
                     <i class = "icon fas fa-user-alt"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="error error-text">Username can't be blank</div>
+                <div class="error error-text error-text-username">123</div>
             </div>
             <div class="field password">
                 <div class="input-area">
@@ -244,96 +244,48 @@
     </script>
 
     <!-- Handlebars JS template -->
-
+    <script src="./JS/logSign.js"></script>
+    
     <script>
-            $(document).ready(function(){
-                // $('#login_form').submit(function(e){
-                //     $.ajax({
-                //         type: "POST",
-                //         url: "action.php",
-                //         data: $("#login_form").serialize(),
-                //         success:function(data)
-                //         {
-                //             if(data == '1')
-                //             {
-                //                 $('#login_form').hide();
-                //                 location.reload();
-                //             }
-                //             else if(data == '2')
-                //             {
-                //                 alert('wrong password');
-                //             }
-                //             else if(data == '3')
-                //             {
-                //                 alert('no such data please register');
-                //                 location.reload();
-                //             }
-                //             else if(data == '4')
-                //             {
-                //                 alert('password is blank');
-                //             }
-                //             else if(data == '5')
-                //             {
-                //                 alert('username is blank');
-                //             }
-                //             else if(data == '6')
-                //             {
-                //                 alert('both field are required');
-                //             }
-                //             else
-                //             {
-                //                 alert('error');
-                //             }
-                //         }
-                //     });
-                //     e.preventDefault();
-                // });
+        $('#form2').submit( function(e) { 
 
-                // $('#logout').click(function(){
-                //     var action = 'logout';
-                //     $.ajax({
-                //         url: "action.php",
-                //         method: "POST",
-                //         data: {action:action},
-                //         success:function()
-                //         {
-                //             location.reload();
-                //         }
-                //     });
-                // });
+            $.ajax({
+            type: "POST",
+            url: "action.php",
+            data: $("#form2").serialize(),
+            success:function(data)
+            {
+                console.log(data);
+                if(data == '1')
+                {
+                    $('#form2').hide();
+                    location.reload();
+                }
+                else if(data == '2')
+                {
+                    // alert('registered username');
+                    var form2 = $("#form2");
+                    form2.children(".username").addClass("shake", "error");
+                    $(".error-text-username").html("Username existed!");
+                }
+                // else if(data == '3')
+                // {
+                //     alert("password not match");
+                // }
+                // else
+                // {
+                //     alert('field are required');
+                // }
 
-                $('#form2').submit(function(e){
-                    $.ajax({
-                        type: "POST",
-                        url: "action.php",
-                        data: $("#form2").serialize(),
-                        success:function(data)
-                        {
-                            if(data == '1')
-                            {
-                                $('#form2').hide();
-                                location.reload();
-                            }
-                            else if(data == '2')
-                            {
-                                alert('registered username');
-                            }
-                            else if(data == '3')
-                            {
-                                alert("password not match");
-                            }
-                            else
-                            {
-                                alert('field are required');
-                            }
+            }
+        });
+        e.preventDefault();
 
-                        }
-                    });
-                    e.preventDefault();
-                });
-            });
 
-</script>
+    });    
+        
+        
+    </script>
 
 
 <?php

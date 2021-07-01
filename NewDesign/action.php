@@ -59,11 +59,11 @@
     //     }
     // }
 
-    // //logout
-    // if(isset($_POST['action']))
-    // {
-    //     unset($_SESSION['username']);
-    // }
+    //logout
+    if(isset($_POST['action']))
+    {
+        unset($_SESSION['username']);
+    }
 
     //register
     if(isset($_POST['uid']))
@@ -75,11 +75,11 @@
     
         if(!empty($username) && !empty($password) && !is_numeric($username) && !empty($repassword) && !empty($email))
         {
-            $query1 = "select * from users where username = '$username' limit 1";
+            $query1 = "select * from user where username = '$username' limit 1";
             $result1 = mysqli_query($con, $query1);
-            if(mysqli_num_rows($result1) > 0 && ($password == $repassword))
+            if(mysqli_num_rows($result1) == 0 && ($password == $repassword))
             {
-                $query =  "insert into user (username, password, repassword, email) values ('$username', '$password', '$repassword', '$email')";
+                $query = "insert into user (username, password, email) values ('$username', '$password', '$email')";
                 mysqli_query($con, $query);
                 $_SESSION['username'] = $username;
                 echo '1';// success
@@ -90,12 +90,12 @@
             }
             else
             {
-                echo '3';//password not match
+                // echo '3';//password not match
             }
         }
         else
         {
-            echo '4';//field are required
+            // echo '4';//field are required
         }
     }
 ?>
