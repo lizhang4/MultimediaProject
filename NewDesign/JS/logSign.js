@@ -43,48 +43,48 @@ $(".register_close").click(function() {
     $(".register").removeClass("active");
 })
 
-form.onsubmit = (u) =>{
-    u.preventDefault();
-    if(uInput.value == ""){
-        uField.classList.add("shake", "error");
-    }
-    else{
-        uField.classList.remove("error");
-    }
-    if(pInput.value == ""){
-        pField.classList.add("shake", "error");
-    }
-    else{
-        pField.classList.remove("error");
-    }
-    setTimeout(() =>{
-        uField.classList.remove("shake");
-        pField.classList.remove("shake");
-    }, 500);
+// form.onsubmit = (u) =>{
+//     u.preventDefault();
+//     if(uInput.value == ""){
+//         uField.classList.add("shake", "error");
+//     }
+//     else{
+//         uField.classList.remove("error");
+//     }
+//     if(pInput.value == ""){
+//         pField.classList.add("shake", "error");
+//     }
+//     else{
+//         pField.classList.remove("error");
+//     }
+//     setTimeout(() =>{
+//         uField.classList.remove("shake");
+//         pField.classList.remove("shake");
+//     }, 500);
 
-    // uInput.onkeuyp = ()=>{
-    //     if(uInput.value == ""){
-    //        uField.classList.add("error"); 
-    //     }
-    //     else{
-    //         uField.classList.remove("error");
-    //     }
-    // }
+//     // uInput.onkeuyp = ()=>{
+//     //     if(uInput.value == ""){
+//     //        uField.classList.add("error"); 
+//     //     }
+//     //     else{
+//     //         uField.classList.remove("error");
+//     //     }
+//     // }
 
-    // pInput.onkeuyp = ()=>{
-    //     if(pInput.value == ""){
-    //        pField.classList.add("error"); 
-    //     }        
-    //     else{
-    //         pField.classList.remove("error");
-    //     }
-    // }
+//     // pInput.onkeuyp = ()=>{
+//     //     if(pInput.value == ""){
+//     //        pField.classList.add("error"); 
+//     //     }        
+//     //     else{
+//     //         pField.classList.remove("error");
+//     //     }
+//     // }
 
-    // if(!uField.classList.contains("error") && !pField.classList.contains("error")){
-    //     window.location.href = "#";
-    //     console.log("submitted");
-    // }
-}
+//     if(!uField.classList.contains("error") && !pField.classList.contains("error")){
+//         window.location.href = "#";
+//         console.log("submitted");
+//     }
+// }
 // let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 // !eInput.value.match(pattern)
 // let errortext = eField.querySelector(".error-text");
@@ -164,6 +164,49 @@ form.onsubmit = (u) =>{
 //         console.log("submitted");
 //     }
 // }
+
+
+function loginErrorHandler() {
+    if(uInput.value == ""){
+        uField.classList.add("shake", "error");
+    }
+    else{
+        uField.classList.remove("error");
+    }
+    if(pInput.value == ""){
+        pField.classList.add("shake", "error");
+    }
+    else{
+        pField.classList.remove("error");
+    }
+    setTimeout(() =>{
+        uField.classList.remove("shake");
+        pField.classList.remove("shake");
+    }, 500);
+
+    // uInput.onkeuyp = ()=>{
+    //     if(uInput.value == ""){
+    //        uField.classList.add("error"); 
+    //     }
+    //     else{
+    //         uField.classList.remove("error");
+    //     }
+    // }
+
+    // pInput.onkeuyp = ()=>{
+    //     if(pInput.value == ""){
+    //        pField.classList.add("error"); 
+    //     }        
+    //     else{
+    //         pField.classList.remove("error");
+    //     }
+    // }
+
+    if(!uField.classList.contains("error") && !pField.classList.contains("error")){
+        // window.location.href = "#";
+        console.log("submitted");
+    }
+}
 
 function registrationErrorHandler()  {
     

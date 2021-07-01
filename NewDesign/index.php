@@ -108,10 +108,10 @@
     <div class = "login">
         <button class = "login_close">&times;</button>
         <header>Login</header>
-        <form id = "form1" action = "./includes/login.inc.php" method="POST">
+        <form id = "form1" action = "./action.php" method="POST" onsubmit="return loginErrorHandler()">
             <div class="field username">
                 <div class="input-area">
-                    <input type = "text" placeholder= "USERNAME">
+                    <input type = "text" placeholder= "USERNAME" name="username">
                     <i class = "icon fas fa-user-alt"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
@@ -119,7 +119,7 @@
             </div>
             <div class="field password">
                 <div class="input-area">
-                    <input type = "password" placeholder= "PASSWORD">
+                    <input type = "password" placeholder= "PASSWORD" name="password">
                     <i class = "icon fas fa-lock"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
@@ -247,35 +247,90 @@
     <script src="./JS/logSign.js"></script>
     
     <script>
-        $('#form2').submit( function(e) { 
-
+         $('#form1').submit(function(e){
             $.ajax({
-            type: "POST",
-            url: "action.php",
-            data: $("#form2").serialize(),
-            success:function(data)
-            {
-                console.log(data);
-                if(data == '1')
+                type: "POST",
+                url: "action.php",
+                data: $("#form1").serialize(),
+                success:function(data)
                 {
-                    $('#form2').hide();
+                    if(data == '1')
+                    {
+                        $('#form1').hide();
+                        location.reload();
+                    }
+                    else if(data == '2')
+                    {
+                        alert('wrong password');
+                    }
+                    else if(data == '3')
+                    {
+                        alert('no such data please register');
+                        location.reload();
+                    }
+                    // else if(data == '4')
+                    // {
+                    //     alert('password is blank');
+                    // }
+                    // else if(data == '5')
+                    // {
+                    //     alert('username is blank');
+                    // }
+                    // else if(data == '6')
+                    // {
+                    //     alert('both field are required');
+                    // }
+                    // else
+                    // {
+                    //     alert('error');
+                    // }
+                }
+            });
+            e.preventDefault();
+        });
+
+        $('#logout').click(function(){
+            var action = 'logout';
+            $.ajax({
+                url: "action.php",
+                method: "POST",
+                data: {action:action},
+                success:function()
+                {
+                    $('.login').hide();
                     location.reload();
                 }
-                else if(data == '2')
+            });
+        });
+        
+        $('#form2').submit( function(e) { 
+            
+            $.ajax({
+                type: "POST",
+                url: "action.php",
+                data: $("#form2").serialize(),
+                success:function(data)
                 {
-                    // alert('registered username');
+                    console.log(data);
+                    if(data == '1')
+                    {
+                        $('#form2').hide();
+                        location.reload();
+                    }
+                    else if(data == '2')
+                    {
+                        // alert('registered username');
                     var form2 = $("#form2");
-                    form2.children(".username").addClass("shake", "error");
+                    $('.field').each(function () {
+                        if($(this).hasClass("username")) {
+                            $(this).addClass("error");
+                        }
+                    });
+                        
                     $(".error-text-username").html("Username existed!");
+                    $(".error-text-username").addClass("error");
+                    form2.children(".username").addClass("shake", "error");
                 }
-                // else if(data == '3')
-                // {
-                //     alert("password not match");
-                // }
-                // else
-                // {
-                //     alert('field are required');
-                // }
 
             }
         });

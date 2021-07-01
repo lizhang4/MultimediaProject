@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,8 +44,23 @@
                     <a href="about.html" class="mx-4">About</a>
                 </div>
                 <div class="col-xl-4 col-lg-3 d-none d-lg-flex login-button justify-content-end align-items-center p-0">
-                    <button href="" class="login-button">Sign in</button>
+                     <?php
+                        if(isset($_SESSION['username']))
+                        {
+                    ?>
+    
+                        <h5>Welcome <?php echo $_SESSION['username'];?></h5><br>
+                        <a href = "#" id="logout">LOGOUT</a>
                     
+                    <?php
+                    }
+                        else
+                        {
+                    ?>
+                        <button class="login-button">Sign in</button>
+                    <?php
+                    }
+                    ?>
                 </div>
 
             </div>
