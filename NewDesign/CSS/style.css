@@ -111,24 +111,25 @@ nav .nav-container .center-nav .active {
 }
 
 
+nav .nav-container h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 
-nav .nav-container .login-button a, nav .nav-container .login-button {
+nav .nav-container button {
     text-underline-offset: 3px;
     color: #1d1d1d;
     letter-spacing: 0.15rem;
     transition: color 0.3s ease-out;
     border: none;
     background-color: transparent;
-
-
 }
 
-nav .nav-container .center-nav a:hover, nav .nav-container .login-button:hover {
+
+
+nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     color: #969696;
     transition: color 0.3s ease-out;
-    
-
-
 }
 
 /* End Navbar Section */

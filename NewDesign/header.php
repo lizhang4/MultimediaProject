@@ -43,14 +43,16 @@
                     <a href="exhibition.php" class="mx-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
                     <a href="about.php" class="mx-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
                 </div>
-                <div class="col-xl-4 col-lg-3 d-none d-lg-flex login-button justify-content-end align-items-center p-0">
+                <div class="col-xl-4 col-lg-3 d-none d-lg-flex justify-content-end align-items-center p-0">
                      <?php
                         if(isset($_SESSION['username']))
                         {
                     ?>
     
-                        <h5>Welcome <?php echo $_SESSION['username'];?></h5><br>
-                        <a href = "#" id="logout">LOGOUT</a>
+                        <h5 class="m-3">Hi, <?php echo $_SESSION['username'];?></h5>
+                        <button id="logout" >Logout</button>
+
+                        <!-- <button class="" id="logout" >LOGOUT</button> -->
                     
                     <?php
                     }
