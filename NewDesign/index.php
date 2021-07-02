@@ -1,11 +1,15 @@
 <?php
+    session_start();
+?>
+
+<?php
     include_once 'header.php';
 ?>
 
     
 
-
-    <div class="top-carousel d-flex justify-content-center align-items-center">
+<!-- TOP Carousel Section -->
+    <section class="top-carousel d-flex justify-content-center align-items-center">
        <div class="swiper-container topSwiper w-100 h-100">
            <div class="swiper-wrapper w-100 h-100 border ">
                <div class="swiper-slide item">
@@ -23,12 +27,14 @@
            <div class="swiper-pagination"></div>
        </div>
 
-    </div>
+    </section>
+<!-- End TOP Carousel Section -->
 
+<!-- Feature Posts Section -->
     <section class="feature-posts  p-0 m-0 d-flex flex-column align-items-center justify-content-center">
         <div class="upper-box d-flex justify-content-between align-items-center ">
             <h4>Feature Posts</h4>
-            <a href="./gallery.html" class="d-flex align-items-center justify-content-around">
+            <a href="./gallery.php" class="d-flex align-items-center justify-content-around">
                 <i class="fas fa-chevron-right"></i>
                 <h4>See More</h4>
             </a>
@@ -42,11 +48,14 @@
         
 
     </section>
+<!-- End Feature Posts Section -->
 
+
+<!-- Exhibition Carousel Section -->
     <section class="exhibition-carousel p-0 m-0 d-flex flex-column align-items-center justify-content-center">
         <div class="upper-box d-flex justify-content-between align-items-center ">
             <h4>Recent Exhibitions</h4>
-            <a href="" class="d-flex align-items-center justify-content-around">
+            <a href="exhibition.php" class="d-flex align-items-center justify-content-around">
                 <i class="fas fa-chevron-right"></i>
                 <h4>See More</h4>
             </a>
@@ -79,7 +88,10 @@
             </div>
         </div>
     </section>
+<!-- End Exhibition Carousel Section -->
 
+
+<!-- Footer Section -->
     <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
         <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none">
             <img src="./imgs/Logo.svg" class="" alt="">
@@ -102,6 +114,8 @@
             </div>
         </div>
     </footer>
+<!-- End Footer Section -->
+
 
 
     <!-- Login Form -->
@@ -135,8 +149,6 @@
 
 
     <!-- Register Form -->
-
-
     <div class = "register">
         <button class = "register_close">&times;</button>
         <header>Register</header>
@@ -147,7 +159,7 @@
                     <i class = "icon fas fa-user-alt"></i>
                     <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="error error-text error-text-username">123</div>
+                <div class="error error-text error-text-username"></div>
             </div>
             <div class="field password">
                 <div class="input-area">
@@ -177,12 +189,7 @@
         </form>
 
         <button class = "login-button login-open-button">Login?</button>
-
-        <div id="uname_response"></div>
-
-
     </div>
-
     <!-- End Register Form -->
 
     <!-- Swiper JS -->
@@ -201,6 +208,8 @@
             },
         });
       </script>
+    <!-- End Swiper JS -->
+
 
 
     <!-- Handlebars JS template -->
@@ -243,104 +252,8 @@
         {{/each}}
     </script>
 
-    <!-- Handlebars JS template -->
-    <script src="./JS/logSign.js"></script>
+    <!-- End Handlebars JS template -->
     
-    <script>
-         $('#form1').submit(function(e){
-            $.ajax({
-                type: "POST",
-                url: "action.php",
-                data: $("#form1").serialize(),
-                success:function(data)
-                {
-                    if(data == '1')
-                    {
-                        $('#form1').hide();
-                        location.reload();
-                    }
-                    else if(data == '2')
-                    {
-                        alert('wrong password');
-                    }
-                    else if(data == '3')
-                    {
-                        alert('no such data please register');
-                        location.reload();
-                    }
-                    // else if(data == '4')
-                    // {
-                    //     alert('password is blank');
-                    // }
-                    // else if(data == '5')
-                    // {
-                    //     alert('username is blank');
-                    // }
-                    // else if(data == '6')
-                    // {
-                    //     alert('both field are required');
-                    // }
-                    // else
-                    // {
-                    //     alert('error');
-                    // }
-                }
-            });
-            e.preventDefault();
-        });
-
-        $('#logout').click(function(){
-            var action = 'logout';
-            $.ajax({
-                url: "action.php",
-                method: "POST",
-                data: {action:action},
-                success:function()
-                {
-                    $('.login').hide();
-                    location.reload();
-                }
-            });
-        });
-        
-        $('#form2').submit( function(e) { 
-            
-            $.ajax({
-                type: "POST",
-                url: "action.php",
-                data: $("#form2").serialize(),
-                success:function(data)
-                {
-                    console.log(data);
-                    if(data == '1')
-                    {
-                        $('#form2').hide();
-                        location.reload();
-                    }
-                    else if(data == '2')
-                    {
-                        // alert('registered username');
-                    var form2 = $("#form2");
-                    $('.field').each(function () {
-                        if($(this).hasClass("username")) {
-                            $(this).addClass("error");
-                        }
-                    });
-                        
-                    $(".error-text-username").html("Username existed!");
-                    $(".error-text-username").addClass("error");
-                    form2.children(".username").addClass("shake", "error");
-                }
-
-            }
-        });
-        e.preventDefault();
-
-
-    });    
-        
-        
-    </script>
 
 
 <?php
