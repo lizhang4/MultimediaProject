@@ -43,7 +43,7 @@
             e.preventDefault();
         });
 
-        $('#logout').click(function(){
+        $('.logout-button').click(function(){
             var action = 'logout';
             $.ajax({
                 url: "action.php",

@@ -31,9 +31,9 @@
     <!-- Navbar Section -->
     <nav class="m-0 p-0">
         <div class="nav-container row m-0 p-0">
-            <div class="inner-container row p-0">
+            <div class="inner-container row p-0 ">
 
-                <div class="col-xl-4 col-lg-3 col-sm-6 logo d-flex align-items-center p-0">
+                <div class="col-xl-4 col-lg-3 col-sm-6 col-6 logo d-flex align-items-center p-0">
                     <a href=""><img src="./imgs/Logo.svg" alt=""></a>
                 </div>
                 
@@ -50,7 +50,7 @@
                     ?>
     
                         <h5 class="m-3">Hi, <?php echo $_SESSION['username'];?></h5>
-                        <button id="logout" >Logout</button>
+                        <button class="logout-button">Logout</button>
 
                         <!-- <button class="" id="logout" >LOGOUT</button> -->
                     
@@ -65,7 +65,58 @@
                     ?>
                 </div>
 
+                <div class="col-sm-6 col-6 d-flex d-lg-none justify-content-end align-items-center m-0 p-0">
+                    <button id="nav-open">open</button>
+                </div>
+
             </div>
         </div>
+        
+        
     </nav>
+    <div class="nav-popup flex-column align-items-center justify-content-center ">
+        <a href="index.php" class="m-4 <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
+        <a href="./gallery.php" class="m-4 <?= ($activePage == 'gallery') ? 'active' : ''; ?>">Gallery</a>
+        <a href="exhibition.php" class="m-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
+        <a href="about.php" class="m-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
+
+        <?php
+            if(isset($_SESSION['username']))
+            {
+        ?>
+
+            <a class="m-4 logout-button" >Logout</a>
+
+            <!-- <button class="" id="logout" >LOGOUT</button> -->
+        
+        <?php
+        }
+            else
+            {
+        ?>
+            <a class="login-button m-4">Sign in</a>
+        <?php
+        }
+        ?>
+    </div>
+    </div>
     <!-- End Navbar Section -->
+
+    <script>
+        $("#nav-open").click(function () { 
+            if( $(".nav-popup").css("display") == "flex") {
+                $(".nav-popup").slideUp();
+            }
+            else {
+                $(".nav-popup").slideDown({
+                    start: function () {
+                        $(this).css({
+                            display: "flex"
+                        });
+                    }
+                });
+
+            }
+        });
+
+    </script>
