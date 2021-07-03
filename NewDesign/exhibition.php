@@ -11,7 +11,7 @@
 ?>
 
     <!-- Exhibition Page Carousel Section -->
-    <section class="gallery-carousel d-flex flex-column">
+    <section  class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/4171c15d72a646ab91b75936b46bc799.jpeg" alt="">
         <h4>Welcome to exhibition page</h4>
     </section>
@@ -51,7 +51,7 @@
     <!-- Handlebar JS -->
     <script id="exhibition-card-template" type="text/x-handlebars-template">
         {{#each exhibitions}}
-            <a href="" class="image itembox" data-bs-toggle="modal" data-bs-target="#exhibition{{@index}}" >
+            <a href="" class="image itembox slideup" data-bs-toggle="modal" data-bs-target="#exhibition{{@index}}" >
                 <div class="content">
                     <img src="{{imageUrl}}" alt="">
                     <div class="overlay"></div>

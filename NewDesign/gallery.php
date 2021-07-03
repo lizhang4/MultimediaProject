@@ -9,9 +9,8 @@
 <?php
     include_once 'header.php';
 ?>
-
     <!-- Gallery Page Carousel Section -->
-    <section class="gallery-carousel d-flex flex-column">
+    <section class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
         <h4>Welcome to gallery page</h4>
     </section>
@@ -55,10 +54,11 @@
     <!-- End Footer Section -->
 
 
+
     <!-- Handlebars JS -->
     <script id="weapon-card-template" type="text/x-handlebars-template">
         {{#each weapons}}
-            <a href="" class="image {{weaponType}} itembox" data-bs-toggle="modal" data-bs-target="#weapon{{@index}}" >
+            <a href="" class="image {{weaponType}} itembox slideup" data-bs-toggle="modal" data-bs-target="#weapon{{@index}}" >
                 <div class="content">
                     <img src="{{imageUrl}}" alt="">
                     <div class="overlay"></div>

@@ -183,7 +183,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .upper-box h4:nth-child(1) {
-    color: black;
+    color: #1d1d1d;
 }
 
 .feature-posts .upper-box i{
@@ -193,7 +193,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .upper-box a {
-    color: black !important; 
+    color: #1d1d1d !important; 
     transition: color 0.3s ease-out;
 
 }
@@ -278,9 +278,11 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .bottom-box .image .info h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
-    color: black;
+    letter-spacing: 0.07rem;
+
+    color: #1d1d1d;
     margin: 0;
 
 }
@@ -288,7 +290,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .feature-posts .bottom-box .image .info p {
     font-size: 0.95rem;
     font-weight: 300;
-    color: black;
+    color: #1d1d1d;
     margin: 0;
 }
 

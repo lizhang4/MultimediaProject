@@ -11,7 +11,7 @@
 ?>
 
     <!-- About Us Page Carousel Section-->
-    <section class="gallery-carousel d-flex flex-column">
+    <section class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
         <h4>Welcome to about page</h4>
     </section>
@@ -19,7 +19,7 @@
 
     <!-- About Us Section -->
     <section class="feature-posts p-0 m-0 d-flex flex-column align-items-center justify-content-center">
-        <div class="upper-box my-3 p-0 h-100 w-100 ">
+        <div class="upper-box my-3 p-0 h-100 w-100 slideup">
             <div class="box-1 row m-0 my-5 p-0 py-3">
                 <h4 class="m-0 p-0 col-lg-2 col-md-2 col-12 text-center text-md-start my-3">About Us</h4>
                 <div class="col-lg-4 col-md-2 col-0"></div>
@@ -33,7 +33,7 @@
 
             </div>
 
-            <div class="box-1 row m-0 my-5 p-0 py-3">
+            <div class="box-1 row m-0 my-5 p-0 py-3 slideup">
                 <h4 class="m-0 p-0 col-lg-2 col-md-2 col-12 text-center text-md-start my-3">FAQ</h4>
                 <div class="col-lg-4 col-md-2 col-0"></div>
                 <div class="col-lg-6 col-md-8 col-12" >
@@ -46,7 +46,7 @@
 
             </div>
 
-            <div class="box-1 row m-0 my-5 p-0 py-3">
+            <div class="box-1 row m-0 my-5 p-0 py-3 slideup">
                 <h4 class="m-0 p-0 col-lg-2 col-md-2 col-12 text-center text-md-start my-3">Contact Us</h4>
                 <div class="col-lg-4 col-md-2 col-0"></div>
                 <div class="col-lg-6 col-md-8 col-12" >
