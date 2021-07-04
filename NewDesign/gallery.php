@@ -9,6 +9,9 @@
 <?php
     include_once 'header.php';
 ?>
+
+<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
+
     <!-- Gallery Page Carousel Section -->
     <section class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
@@ -52,7 +55,7 @@
         </div>
     </footer>
     <!-- End Footer Section -->
-
+</div>
 
 
     <!-- Handlebars JS -->
@@ -85,7 +88,7 @@
                                         <h2><span>Weapon type:</span> {{weaponType}}</h2>
                                         <h2><span>Owner:</span> {{weilder}}</h2>
                                         <h2><span>DOB:</span> {{date}}</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla.</p>
+                                        <p>{{description}}</p>
     
                                     </div>
                                     <i class="fas fa-caret-down"></i>

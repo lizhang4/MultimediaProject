@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" integrity="sha512-eeBbzvdY28BPYqEsAv4GU/Mv48zr7l0cI6yhWyqhgRoNG3sr+Q2Fr6751bA04Cw8SGUawtVZlugHm5H1GOU/TQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/CSS/animsition.min.css">
 
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/login.css">
@@ -41,9 +42,9 @@
                     <a href="./index.php"><h2>Dynasty Museum</h2></a>
                 </div>
                 
-                <div class="col-xl-4 col-lg-6 d-none center-nav d-lg-flex justify-content-around align-items-center">
-                    <a href="./index.php" class="mx-4 <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
-                    <a href="./gallery.php" class="mx-4 <?= ($activePage == 'gallery') ? 'active' : ''; ?>">Gallery</a>
+                <div class="col-xl-4 col-lg-6 d-none center-nav d-lg-flex justify-content-around align-items-center ">
+                    <a href="./index.php" class="animsition-link mx-4 <?= ($activePage == 'index') ? 'active':''; ?> " >Home</a>
+                    <a href="./gallery.php" class="animsition-link mx-4 <?= ($activePage == 'gallery') ? 'active' : ''; ?>">Gallery</a>
                     <a href="./exhibition.php" class="mx-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
                     <a href="./about.php" class="mx-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
                 </div>
@@ -106,6 +107,8 @@
     </div>
     <!-- End Navbar Section -->
 
+
+
     <script>
         $("#nav-open").click(function () { 
             if( $(".nav-popup").css("display") == "flex") {
@@ -123,4 +126,31 @@
             }
         });
 
+    </script>
+
+    <script>
+        $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
     </script>

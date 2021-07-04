@@ -10,6 +10,9 @@
     include_once 'header.php';
 ?>
 
+<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
+
+
     <!-- Exhibition Page Carousel Section -->
     <section  class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/4171c15d72a646ab91b75936b46bc799.jpeg" alt="">
@@ -35,7 +38,7 @@
 
     
     <!-- Footer Section -->
-    <footer class=" p-0 py-5 d-flex flex-column align-items-center justify-content-start h-50 my-5">
+    <footer class=" p-0 py-5 d-flex flex-column align-items-center justify-content-start h-50 my-5 ">
         <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row">
             
             <div class="col-12 order-2 social-media-container d-flex justify-content-center align-items-center">
@@ -46,6 +49,7 @@
         </div>
     </footer>
     <!-- End Footer Section -->
+</div>
 
 
     <!-- Handlebar JS -->

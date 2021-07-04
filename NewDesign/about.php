@@ -10,6 +10,8 @@
     include_once 'header.php';
 ?>
 
+<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
+
     <!-- About Us Page Carousel Section-->
     <section class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
@@ -76,6 +78,7 @@
         </div>
     </footer>
     <!-- End Footer Section -->
+</div>
 
 
 
