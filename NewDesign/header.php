@@ -24,14 +24,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
     
     <script src="./JS/handlebars-v4.7.7.js"></script>
-     
 
 
     
 </head>
 <body>
     <!-- Navbar Section -->
-    <nav class="m-0 p-0 d-flex align-items-center nav navExpand">
+    <nav class="m-0 p-0">
         <div class="nav-container row m-0 p-0">
             <div class="inner-container row p-0 ">
 
@@ -41,10 +40,10 @@
                 </div>
                 
                 <div class="col-xl-4 col-lg-6 d-none center-nav d-lg-flex justify-content-around align-items-center">
-                    <a href="./index.php" class="mx-4 <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
+                    <a href="index.php" class="mx-4 <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
                     <a href="./gallery.php" class="mx-4 <?= ($activePage == 'gallery') ? 'active' : ''; ?>">Gallery</a>
-                    <a href="./exhibition.php" class="mx-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
-                    <a href="./about.php" class="mx-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
+                    <a href="exhibition.php" class="mx-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
+                    <a href="about.php" class="mx-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
                 </div>
                 <div class="col-xl-4 col-lg-3 d-none d-lg-flex justify-content-end align-items-center p-0">
                      <?php
@@ -78,10 +77,10 @@
         
     </nav>
     <div class="nav-popup flex-column align-items-center justify-content-center ">
-        <a href="./index.php" class="m-4 <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
+        <a href="index.php" class="m-4 <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
         <a href="./gallery.php" class="m-4 <?= ($activePage == 'gallery') ? 'active' : ''; ?>">Gallery</a>
-        <a href="./exhibition.php" class="m-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
-        <a href="./about.php" class="m-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
+        <a href="exhibition.php" class="m-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
+        <a href="about.php" class="m-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
 
         <?php
             if(isset($_SESSION['username']))

@@ -174,7 +174,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 
     min-height: fit-content;
     width: 95%; 
-    max-width: 1200px;
+    max-width: 1550px;
     margin: 0 auto !important;
 }
 
@@ -196,7 +196,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .upper-box h4:nth-child(1) {
-    color: #1d1d1d;
+    color: black;
 }
 
 .feature-posts .upper-box i{
@@ -206,7 +206,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .upper-box a {
-    color: #1d1d1d !important; 
+    color: black !important; 
     transition: color 0.3s ease-out;
 
 }
@@ -260,7 +260,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    max-width: 22.5%;
+    max-width: 23%;
     
 }
 
@@ -291,11 +291,11 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .bottom-box .image .info h4 {
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 0.07rem;
 
-    color: #1d1d1d;
+    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
     margin: 0;
 
 }
@@ -303,7 +303,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .feature-posts .bottom-box .image .info p {
     font-size: 0.85rem;
     font-weight: 300;
-    color: #1d1d1d;
+    color: black;
     margin: 0;
 }
 
@@ -336,7 +336,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .exhibition-carousel {
     height: 50vw;
     width: 95%; 
-    max-width: 1200px;
+    max-width: 1550px;
     margin: 0 auto !important;
 }
 
@@ -419,7 +419,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 footer {
     height: 80vh;
     width: 95%; 
-    max-width: 1200px;
+    max-width: 1550px;
     margin: 0 auto !important;
     margin-top: 100px !important;
 

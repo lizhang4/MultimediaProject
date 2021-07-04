@@ -6,13 +6,14 @@
     include_once 'header.php';
 ?>
 
+    
 
 <!-- TOP Carousel Section -->
-<section class="top-carousel d-flex justify-content-center align-items-center">
+    <section class="top-carousel d-flex justify-content-center align-items-center">
        <div class="swiper-container topSwiper w-100 h-100">
            <div class="swiper-wrapper w-100 h-100 border ">
                <div class="swiper-slide item">
-                   <img src="./imgs/Sword.png" alt="">
+                   <img src="./imgs/13.jpg" alt="">
                </div>
                <div class="swiper-slide item">
                    <img src="./imgs/Sword.png" alt="">
@@ -51,7 +52,7 @@
 
 
 <!-- Exhibition Carousel Section -->
-    <section class="exhibition-carousel p-0 m-0 d-flex flex-column align-items-center justify-content-center">
+    <section class="exhibition-carousel p-0 m-0 d-flex flex-column align-items-center justify-content-center slideup">
         <div class="upper-box d-flex justify-content-between align-items-center ">
             <h4>Recent Exhibitions</h4>
             <a href="exhibition.php" class="d-flex align-items-center justify-content-around">
@@ -59,7 +60,7 @@
                 <h4>See More</h4>
             </a>
         </div>
-        <div class="lower-box slideup">
+        <div class="lower-box">
             <div class="swiper-container exhibitionSwiper w-100 h-100">
                 <div class="swiper-wrapper w-100 h-100">
                     <div class="swiper-slide w-100 h-100">
@@ -91,11 +92,11 @@
 
 
 <!-- Footer Section -->
-    <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
+    <footer class=" p-0 d-flex flex-column align-items-center justify-content-start slideup">
         <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none p-0 m-0">
             <img src="./imgs/Logo.svg" class="p-0 m-0" alt="">
         </div>
-        <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row slideup">
+        <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row ">
             <div class="col-md-6 order-md-0 order-1 col-12 left-container">
                 <img src="./imgs/Logo.svg" class="d-none d-md-block" alt="">
                 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
@@ -191,8 +192,6 @@
     </div>
     <!-- End Register Form -->
 
-
-
     <!-- Swiper JS -->
     <script>
         var exhibitionSwiper = new Swiper(".exhibitionSwiper", {
@@ -217,7 +216,7 @@
     <script id="weapon-card-template" type="text/x-handlebars-template">
         {{#each weapons}}
             {{#lesserThan @index 8}}
-            <a href="" class="image {{weaponType}} itembox slideup" data-bs-toggle="modal" data-bs-target="#weapon{{@index}}" >
+            <a href="" class="image {{weaponType}} itembox slideup" data-bs-toggle="modal" data-bs-target="#weapon{{@index}} " >
                 <div class="content">
                     <img src="{{imageUrl}}" alt="">
                     <div class="overlay"></div>
