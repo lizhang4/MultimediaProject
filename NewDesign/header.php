@@ -36,7 +36,8 @@
             <div class="inner-container row p-0 ">
 
                 <div class="col-xl-4 col-lg-3 col-sm-6 col-6 logo d-flex align-items-center p-0">
-                    <a href=""><img src="./imgs/Logo.svg" alt=""></a>
+                    <!-- <a href=""><img src="./imgs/Logo.svg" alt=""></a> -->
+                    <a href=""><h2>Dynasty Museum</h2></a>
                 </div>
                 
                 <div class="col-xl-4 col-lg-6 d-none center-nav d-lg-flex justify-content-around align-items-center">

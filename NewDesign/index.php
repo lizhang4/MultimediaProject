@@ -12,13 +12,13 @@
        <div class="swiper-container topSwiper w-100 h-100">
            <div class="swiper-wrapper w-100 h-100 border ">
                <div class="swiper-slide item">
-                   <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
+                   <img src="./imgs/Sword.png" alt="">
                </div>
                <div class="swiper-slide item">
-                   <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
+                   <img src="./imgs/Sword.png" alt="">
                </div>
                <div class="swiper-slide item">
-                   <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
+                   <img src="./imgs/wallpaperflare.com_wallpaper (3).jpg" alt="">
                </div>
                
            </div>
@@ -92,8 +92,8 @@
 
 <!-- Footer Section -->
     <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
-        <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none">
-            <img src="./imgs/Logo.svg" class="" alt="">
+        <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none p-0 m-0">
+            <img src="./imgs/Logo.svg" class="p-0 m-0" alt="">
         </div>
         <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row slideup">
             <div class="col-md-6 order-md-0 order-1 col-12 left-container">
@@ -235,12 +235,12 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="./imgs/DaoCoverEdited.png" alt="">
+                            <img src="{{imageUrl}}" alt="">
                             <h4>Weilder: {{weilder}}</h4>
                             <h4>Date: {{date}}</h4>
                         </div>
                         <div class="modal-footer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla.</p>
+                            <p>{{description}}</p>
                         </div>
                         </div>
                     </div>

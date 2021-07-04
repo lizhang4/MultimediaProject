@@ -19,8 +19,8 @@
 
 .navExpand {
     animation-name: navExpand;
-    animation-duration: 0.7s;
-    height: 13vh;
+    animation-duration: 0.5s;
+    height: 15vh;
 }
 
 .navShrink {
@@ -28,6 +28,22 @@
     animation-duration: 0.5s;
     height: 10vh;
 }
+
+@media only screen and (max-width: 576px) {
+    .navExpand {
+        animation-name: navExpandSmall;
+        animation-duration: 0.5s;
+        height: 11vh;
+    }
+    
+    .navShrink {
+        animation-name: navShrinkSmall;
+        animation-duration: 0.5s;
+        height: 10vh;
+    }
+}
+
+
 
 @keyframes slide {
     0% {
@@ -49,16 +65,34 @@
         height: 11vh;
     }
     100% {
-        height: 13vh;
+        height: 15vh;
     }
 }
 
 @keyframes navShrink {
     0% {
-        height: 13vh;
+        height: 15vh;
     }
     100% {
         height: 10vh;
+    }
+}
+
+@keyframes navShrinkSmall {
+    0% {
+        height: 11vh;
+    }
+    100% {
+        height: 10vh;
+    }
+}
+
+@keyframes navExpandSmall {
+    0% {
+        height: 10vh;
+    }
+    100% {
+        height: 11vh;
     }
 }
 
