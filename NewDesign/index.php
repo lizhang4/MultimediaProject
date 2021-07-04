@@ -12,10 +12,10 @@
        <div class="swiper-container topSwiper w-100 h-100">
            <div class="swiper-wrapper w-100 h-100 border ">
                <div class="swiper-slide item">
-                   <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
+                   <img src="./imgs/Sword.png" alt="">
                </div>
                <div class="swiper-slide item">
-                   <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
+                   <img src="./imgs/Sword.png" alt="">
                </div>
                <div class="swiper-slide item">
                    <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
@@ -93,11 +93,13 @@
 <!-- Footer Section -->
     <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
         <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none">
-            <img src="./imgs/Logo.svg" class="" alt="">
+            <!-- <img src="./imgs/Logo.svg" class="" alt=""> -->
+            <h2>Dynasty Museum</h2>
         </div>
         <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row slideup">
             <div class="col-md-6 order-md-0 order-1 col-12 left-container">
-                <img src="./imgs/Logo.svg" class="d-none d-md-block" alt="">
+                <!-- <img src="./imgs/Logo.svg" class="d-none d-md-block" alt=""> -->
+                <h2 class="d-none d-md-block">Dynasty Museum</h2>
                 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
                 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
                 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
@@ -193,23 +195,7 @@
 
 
 
-    <!-- Swiper JS -->
-    <script>
-        var exhibitionSwiper = new Swiper(".exhibitionSwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var topSwiper = new Swiper(".topSwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-      </script>
-    <!-- End Swiper JS -->
+   
 
 
 
@@ -228,20 +214,30 @@
                 </div>
                 
                 <div class="modal fade" id="weapon{{@index}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">{{name}}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="./imgs/DaoCoverEdited.png" alt="">
-                            <h4>Weilder: {{weilder}}</h4>
-                            <h4>Date: {{date}}</h4>
-                        </div>
-                        <div class="modal-footer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla.</p>
-                        </div>
+                            <div class="modal-body d-flex flex-md-row justify-content-md-around align-items-md-center">
+                                <div class="box d-md-flex d-none">
+                                    <div class="content">
+                                        <img src="{{imageUrl}}" alt="">
+                                    </div>
+                                </div>
+                                <!-- <img src="./imgs/DaoCoverEdited.png" alt=""> -->
+                                <div class="d-flex flex-column box-2 align-items-center justify-content-center">
+                                    <i class="fas fa-caret-up"></i>
+                                    <div class="information d-flex flex-column align-content-center justify-content-start">
+                                        <h1>{{name}}</h1>
+                                        <h2><span>Weapon type:</span> {{weaponType}}</h2>
+                                        <h2><span>Owner:</span> {{weilder}}</h2>
+                                        <h2><span>DOB:</span> {{date}}</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla.</p>
+    
+                                    </div>
+                                    <i class="fas fa-caret-down"></i>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -254,6 +250,26 @@
     </script>
 
     <!-- End Handlebars JS template -->
+
+     <!-- Swiper JS -->
+     <script>
+        var exhibitionSwiper = new Swiper(".exhibitionSwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var topSwiper = new Swiper(".topSwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        
+      </script>
+    <!-- End Swiper JS -->
+
     
 
 

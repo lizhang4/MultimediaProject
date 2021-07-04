@@ -69,20 +69,30 @@
                 </div>
                 
                 <div class="modal fade" id="weapon{{@index}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">{{name}}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="./imgs/DaoCoverEdited.png" alt="">
-                            <h4>Weilder: {{weilder}}</h4>
-                            <h4>Date: {{date}}</h4>
-                        </div>
-                        <div class="modal-footer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla.</p>
-                        </div>
+                            <div class="modal-body d-flex flex-md-row justify-content-md-around align-items-md-center">
+                                <div class="box d-md-flex d-none">
+                                    <div class="content">
+                                        <img src="{{imageUrl}}" alt="">
+                                    </div>
+                                </div>
+                                <!-- <img src="./imgs/DaoCoverEdited.png" alt=""> -->
+                                <div class="d-flex flex-column box-2 align-items-center justify-content-center">
+                                    <i class="fas fa-caret-up"></i>
+                                    <div class="information d-flex flex-column align-content-center justify-content-start">
+                                        <h1>{{name}}</h1>
+                                        <h2><span>Weapon type:</span> {{weaponType}}</h2>
+                                        <h2><span>Owner:</span> {{weilder}}</h2>
+                                        <h2><span>DOB:</span> {{date}}</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla.</p>
+    
+                                    </div>
+                                    <i class="fas fa-caret-down"></i>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

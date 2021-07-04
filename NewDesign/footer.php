@@ -99,6 +99,8 @@
     <script src="./JS/script.js"></script>
     <script src="./JS/exhibition.js"></script>
     <script src="./JS/animation.js"></script>
+    <script src="./JS/popUpModal.js"></script>
+
 
 </body>
 </html> 
