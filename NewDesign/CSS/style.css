@@ -100,7 +100,7 @@ nav .nav-container .logo a img{
 
 nav .nav-container .logo a h2{
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #1d1d1d;
 }
 
@@ -144,6 +144,9 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 /* End Navbar Section */
 
 
+
+
+
 /* Top Carousel Section */
 .top-carousel {
     height: 55vw;
@@ -164,6 +167,112 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 /* End Top Carousel Section */
+
+
+
+/* About Section */
+.about {
+    width: 95%;
+    max-width: 1150px;
+    height: fit-content;
+    margin: 100px auto !important;
+
+}
+
+
+.about .upper-box {
+    height: 100px;
+    width: 100%;
+}
+
+
+.about .upper-box h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    
+    letter-spacing: 0.1rem;
+    
+    text-decoration: none;
+}
+
+.about .upper-box h4:nth-child(1) {
+    color: #1d1d1d;
+}
+
+.about .upper-box i{
+    padding-bottom: 7px !important;
+    padding-right: 5px;
+    
+}
+
+.about .upper-box a {
+    color: #1d1d1d !important; 
+    transition: color 0.3s ease-out;
+
+}
+
+.about .upper-box a:hover {
+    color: #969696 !important;
+    transition: color 0.3s ease-out;
+}
+
+.about .lower-box{
+    width: 95%;
+    max-width: 1150px;
+    height: 600px !important;
+    background-color: rgb(211, 211, 211, 0.3);
+    
+}
+
+
+.about .img {
+    width: 55%;
+    height: 80%;
+    background-color: black;
+
+}
+
+.about .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.about .content {
+    width: 80%;
+    height: 80%;
+}
+
+
+.about h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin-bottom: 5px;
+}
+
+
+.about p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+
+}
+
+.about a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+
+
+
+/* End About Section */
+
 
 
 /* Feature-posts Section */
@@ -418,7 +527,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 
 /* Footer Section */
 footer {
-    height: 80vh;
+    height: 20vh;
     width: 95%; 
     max-width: 1150px;
     margin: 0 auto !important;
@@ -551,18 +660,21 @@ footer .social-media-container i {
 
     }
 
+    .about, .feature-posts, .exhibition-carousel, footer {
+        width: 90%;
+        margin: 0 auto !important;
+    }
+
+    .about .lower-box .img {
+        width: 70%;
+    }
+
     .feature-posts .bottom-box .image {
         flex: 33.33%;
         max-width: 50%;
 
-
-
     }
 
-    .feature-posts, .exhibition-carousel, footer {
-        width: 90%;
-        margin: 0 auto !important;
-    }
 
     .exhibition-carousel {
         height: 80vw;
@@ -599,10 +711,29 @@ footer .social-media-container i {
 
     }
 
-    .feature-posts, .exhibition-carousel, footer {
+    .about .feature-posts, .exhibition-carousel, footer {
         width: 90%;
         margin: 0 auto !important;
     }
+
+    .about .lower-box{
+
+        max-width: 1150px;
+        height: 700px !important;
+        background-color: rgb(211, 211, 211, 0.3);
+        
+    }
+
+    .about .lower-box .col-12 {
+        width: 85%;
+    }
+
+    .about .lower-box .img {
+        height: 60%;
+        margin: 30px auto;
+    }
+
+
 
     .exhibition-carousel {
         height: 100vw;
@@ -635,6 +766,11 @@ footer .social-media-container i {
     .top-carousel .swiper-pagination {
         transform: translateY(-100%);
 
+    }
+
+    .about .lower-box .img {
+        height: 50% !important;
+        margin: 30px auto;
     }
 
     

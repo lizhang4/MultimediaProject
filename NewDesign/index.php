@@ -29,6 +29,40 @@
     
         </section>
     <!-- End TOP Carousel Section -->
+
+    <!-- About Section -->
+        <section class="about">
+            <div class="upper-box d-flex  justify-content-between align-items-center ">
+                <h4>About</h4>
+                <a href="./about.php" class="d-flex align-items-center justify-content-around">
+                    <i class="fas fa-chevron-right"></i>
+                    <h4>See More</h4>
+                </a>
+            </div>
+            <div class="lower-box row d-flex justify-content-around align-items-center h-100 w-100 m-0 p-0 slideup">
+                <div class="d-none d-md-flex col-md-6 flex-column align-items-center justify-content-center h-100">
+                    <div class="img">
+                        <img src="./imgs/aboutSword.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center h-100">
+                    <div class="img d-block d-md-none">
+                        <img src="./imgs/aboutSword.png" alt="">
+                    </div>
+                    <h1 class="text-uppercase text-center">Dynasty Museum</h1>
+                    <p class="text-center">rem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna lorem. Quisque interdum lorem vitae luctus congue. Sed bibendum urna ex, vitae rhoncus magna fermentum et. </p>
+                    <a href="./about.php">See More</a>
+                </div>
+                <div class="col-0 col-md-1"></div>
+            
+            
+            </div>
+        </section>
+
+
+
+    <!-- End About Section -->
+
     
     <!-- Feature Posts Section -->
         <section class="feature-posts  p-0 m-0 d-flex flex-column align-items-center justify-content-center">
@@ -93,13 +127,11 @@
     
     <!-- Footer Section -->
         <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
-            <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none">
-                <!-- <img src="./imgs/Logo.svg" class="" alt=""> -->
+            <!-- <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none">
                 <h2>Dynasty Museum</h2>
             </div>
             <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row slideup">
                 <div class="col-md-6 order-md-0 order-1 col-12 left-container">
-                    <!-- <img src="./imgs/Logo.svg" class="d-none d-md-block" alt=""> -->
                     <h2 class="d-none d-md-block">Dynasty Museum</h2>
                     <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
                     <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
@@ -107,7 +139,7 @@
                 </div>
                 <div class="col-md-6 order-md-1 order-0 col-12 right-container my-md-0 my-4" >
                     <img src="./imgs/sculpture-2013048_1920.jpg" alt="">
-                </div>
+                </div> -->
                 <div class="col-12 order-2 social-media-container d-flex justify-content-center align-items-center">
                     <i class="fab fa-facebook m-3"></i>
                     <i class="fab fa-facebook m-3"></i>
@@ -116,6 +148,8 @@
                 </div>
             </div>
         </footer>
+
+
     <!-- End Footer Section -->
     
     

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./CSS/gallery.css">
     <link rel="stylesheet" href="./CSS/animation.css">
     <link rel="stylesheet" href="./CSS/popUpModal.css">
-    <title>Document</title>
+    <title>Dynasty Museum</title>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2cb5c720d7.js" crossorigin="anonymous"></script>
@@ -39,7 +39,7 @@
 
                 <div class="col-xl-4 col-lg-3 col-sm-6 col-6 logo d-flex align-items-center p-0">
                     <!-- <a href=""><img src="./imgs/Logo.svg" alt=""></a> -->
-                    <a href="./index.php"><h2>Dynasty Museum</h2></a>
+                    <a href="./index.php"><h2>D M</h2></a>
                 </div>
                 
                 <div class="col-xl-4 col-lg-6 d-none center-nav d-lg-flex justify-content-around align-items-center ">
