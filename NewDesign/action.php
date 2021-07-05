@@ -72,6 +72,7 @@
         $password = $_POST['pwd'];
         $repassword = $_POST['pwdrepeat'];
         $email = $_POST['email'];
+
     
         if(!empty($username) && !empty($password) && !is_numeric($username) && !empty($repassword) && !empty($email))
         {

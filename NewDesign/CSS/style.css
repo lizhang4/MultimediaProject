@@ -121,7 +121,7 @@ nav .nav-container .center-nav .active {
 
 
 nav .nav-container h5 {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -158,7 +158,31 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .top-carousel  .item {
     height: 100%;
     width: 100%;
+    background-color: #0C0C0C;
 }
+
+.top-carousel .item h1{
+    font-size: 6rem;
+    font-weight: 600;
+    color: #FAFAFA;
+    letter-spacing: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.top-carousel .item h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FAFAFA;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.top-carousel .item .line {
+    border-top: #FAFAFA solid 3px;
+    width: 5%;
+}
+
+
 
 .top-carousel .item img {
     height: 95%;
@@ -221,15 +245,15 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     width: 95%;
     max-width: 1150px;
     height: 600px !important;
-    background-color: rgb(211, 211, 211, 0.3);
+    background-color: #0C0C0C;
     
 }
 
 
 .about .img {
-    width: 55%;
-    height: 80%;
-    background-color: black;
+    width: 75%;
+    height: 100%;
+    background-color: #0C0C0C;
 
 }
 
@@ -249,7 +273,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .about h1 {
     font-size: 2rem;
     font-weight: 600;
-    color: #1d1d1d;
+    color: #FFFFFF;
     margin-bottom: 5px;
 }
 
@@ -257,7 +281,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .about p {
     font-size: 1rem;
     font-weight: 400;
-    color: #1d1d1d;
+    color: rgb(225, 225, 225, 0.9);
     margin-bottom: 30px;
 
 }
@@ -265,7 +289,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .about a {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #1d1d1d;
+    color: #FFFFFF;
 }
 
 
@@ -281,6 +305,10 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     width: 95%; 
     max-width: 1150px;
     margin: 0 auto !important;
+}
+
+.feature-posts p span {
+    font-weight: 600;
 }
 
 .feature-posts .upper-box {
@@ -358,7 +386,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    gap: 1vw 10px;
+    gap: 1vw 30px;
 }
 
 .feature-posts .bottom-box .image {
@@ -366,7 +394,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    max-width: 24.5%;
+    max-width: 23%;
     
 }
 
@@ -671,7 +699,7 @@ footer .social-media-container i {
 
     .feature-posts .bottom-box .image {
         flex: 33.33%;
-        max-width: 50%;
+        max-width: 47.5%;
 
     }
 
@@ -720,7 +748,7 @@ footer .social-media-container i {
 
         max-width: 1150px;
         height: 700px !important;
-        background-color: rgb(211, 211, 211, 0.3);
+        background-color: #0C0C0C;
         
     }
 

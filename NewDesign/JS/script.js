@@ -43,58 +43,132 @@ var weapons = [
     },
 
     {
-        name: "Silver Dao",
-        weaponType: "Dao",
-        weilder: "Bob",
+        name: "Iron Tyre Bow",
+        weaponType: "Bow",
+        weilder: "Huang Zhong",
         date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DaoCoverEdited.png",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
+        imageUrl: "./imgs/HuangZhong.jpg",
+        description: "This bow is owned by Huang Zhong, a member of five tiger general. The bow is one of the indispensable cold weapons for large-scale wars. Most of them are worn by brave generals who are stronger than others, and the weight is about 200.",
     },
 
     {
-        name: "Silver Dao",
-        weaponType: "Axe",
-        weilder: "Bob",
+        name: "Seven Star Sword",
+        weaponType: "Sword",
+        weilder: "Cao Cao",
         date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DaoCoverEdited.png",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
+        imageUrl: "./imgs/SevenStarSword.png",
+        description: "This sword appears in the forth chapter of “romance of the three kingdoms”. It was originally owned by Situ Wang Yun. When Cao Cao assassinated Dong Zhuo, he borrowed a sword from Wang Yun to assassinate him. After the assassination failed, Cao Cao dedicated the sword to Dong Zhuo. After Dong Zhuo was killed by Wang Yun, this sword returned to Wang Yun's hand. Soon, Dong Zhuo's army team attacked Li Chang into Chang'an. Wang Yun was killed in the fight, the sword fallen into Li Chang's hand. Later, Li Chang was killed by Cao Cao's troops. At last, this sword fell into the hands of Cao Cao.",
     },
 
     {
-        name: "Silver Dao",
-        weaponType: "Others",
-        weilder: "Bob",
+        name: "Sword Of Heaven",
+        weaponType: "Sword",
+        weilder: "Cao Cao",
         date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DaoCoverEdited.png",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
+        imageUrl: "./imgs/YiTianJian.png",
+        description: 'This sword appears in the forty-one chapter of “romance of the three kingdoms”. This sword was originally owned by Cao Cao. It is said to be extremely sharp, cutting iron like mud. Cao Cao used the sword to kill Lu Boshe’s family by mistake, and sigh “I would rather take the world, and stop teaching the world to take me”. The Sword of Heaven and Qing Gang Sword were collectively called "Peerless Double Swords", both of which were owned by Cao Cao. Cao Cao used the sword of heaven to suppress his might and the Qing Gang Sword to kill. Cao Cao always bring this sword with him to manifest his status.'
     },
 
     {
-        name: "Silver Dao",
-        weaponType: "Others",
-        weilder: "Bob",
+        name: "The Twins Sword",
+        weaponType: "Sword",
+        weilder: "Liu Bei",
         date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DaoCoverEdited.png",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
+        imageUrl: "./imgs/TheTwinsSword.png",
+        description: 'This sword is owned by Liu Bei. The male sword is three feet and seven inches long while the female sword is three feet and three inches. The twins sword is protected by the yellow dragon and phoenix. These two divine beasts are too bloodthirsty and extremely hostile. If there is no battle to fight, they must be sacrificed with human blood. If the sword owner considers the loyalty and benevolence mentioned above, he can be filled with compassion. The tears of anger are replaced, thereby dissolving the hostility of the two gods. Rumor has it that there is an invincible secret hidden in the twin sword.',
     },
 
     {
-        name: "Silver Dao",
-        weaponType: "Others",
-        weilder: "Bob",
+        name: "Tiger Head Cham Golden spear",
+        weaponType: "Spear",
+        weilder: "Ma Chao",
         date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DaoCoverEdited.png",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
+        imageUrl: "./imgs/MaChao.png",
+        description: "This spear is owned by Ma Chao, a member of five tiger general. The spear body is made of cold iron, measuring one foot and three inches in length. The head of the spear is in the shape of a black gold tiger head. It swallows the blade with a tiger's mouth. The spear body is gilded and made of platinum.",
     },
 
     {
-        name: "Silver Dao",
-        weaponType: "Others",
-        weilder: "Bob",
+        name: "Double-Iron Halberd",
+        weaponType: "Halberd",
+        weilder: "Dian Wei",
         date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DaoCoverEdited.png",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil velit consequatur enim ab dolores ea",
+        imageUrl: "./imgs/DianWei.png",
+        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
     },
+
+    {
+        name: "Bright Silver Spear",
+        weaponType: "Spear",
+        weilder: "Zhao Yun",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/ZhaoYun.png",
+        description: "This spear is owned by Zhao Yun, a member of five tiger general. With the qing gang sword in the left hand, the bright silver spear in the right hand, the white dragon horse, the white helmet, white armor, is the savior of Changbanpo riding alone, smashed back and forth among the millions of Cao’s army, whom is the fierce general, Changshan, Zhao Yun, also named as Zhao Zilong! This is how the novel “romance of three kingdoms” describe the spear and Zhao Yun. This spear also named as Gentian Silver Spear. It is recorded in the wild history that this spear was passed down from the family, and he was given to him after his brother died. In addition, during the Battle of Changbanpo, Zhao Yun killed Cao Cao's attendant Xiahouen and obtained Cao Cao's sword (qing gang sword) from Xiahouen. Zhao Yun used his own spear (bright silver spear) and the snatched sword (qing gang sword) to break out of the siege and returned to Liu Bei's side. Since then, Zhao Yun has been using the Bright Silver Spear and the Qing Gang Sword as his weapons.",
+    },
+
+    {
+        name: "Long-Handle Blade",
+        weaponType: "Blade",
+        weilder: "Cao Hong",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/DianWei.png",
+        description: "A long-handle knife is a common weapon in three kingdoms. It is a long weapon. It is actually a knife with long-handle. The famous general that use long-handle knife is Cao Hong.",
+    },
+
+    {
+        name: "Double-Iron Halberd",
+        weaponType: "Halberd",
+        weilder: "Dian Wei",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/DianWei.png",
+        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+    },
+
+    {
+        name: "Double-Iron Halberd",
+        weaponType: "Halberd",
+        weilder: "Dian Wei",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/DianWei.png",
+        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+    },
+
+    {
+        name: "Double-Iron Halberd",
+        weaponType: "Halberd",
+        weilder: "Dian Wei",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/DianWei.png",
+        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+    },
+
+    {
+        name: "Double-Iron Halberd",
+        weaponType: "Halberd",
+        weilder: "Dian Wei",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/DianWei.png",
+        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+    },
+
+    {
+        name: "Double-Iron Halberd",
+        weaponType: "Halberd",
+        weilder: "Dian Wei",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/DianWei.png",
+        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+    },
+
+    {
+        name: "Double-Iron Halberd",
+        weaponType: "Halberd",
+        weilder: "Dian Wei",
+        date: "1512 - 1515 ca.",
+        imageUrl: "./imgs/DianWei.png",
+        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+    },
+
+
     
 ]
 
