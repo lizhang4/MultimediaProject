@@ -13,10 +13,10 @@
            <div class="swiper-container topSwiper w-100 h-100">
                <div class="swiper-wrapper w-100 h-100 border ">
                    <div class="swiper-slide item">
-                       <img src="./imgs/Sword.png" alt="">
+                       <img src="./imgs/TopCarousel.png" alt="">
                    </div>
                    <div class="swiper-slide item">
-                       <img src="./imgs/Sword.png" alt="">
+                       <img src="./imgs/TopCarousel-2.png" alt="">
                    </div>
                    <div class="swiper-slide item">
                        <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
