@@ -15,7 +15,7 @@
 
     <!-- Exhibition Page Carousel Section -->
     <section  class=" gallery-carousel d-flex flex-column">
-        <img src="./imgs/4171c15d72a646ab91b75936b46bc799.jpeg" alt="">
+        <img src="./imgs/Exhibition3.png" alt="">
         <h4>Welcome to exhibition page</h4>
     </section>
     <!-- End Exhibition Page Carousel Section -->
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="modal fade" id="exhibition{{@index}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
                             <div class="modal-body d-flex flex-md-row justify-content-md-around align-items-md-center">
                                 <div class="box d-md-flex d-none">
@@ -67,7 +67,8 @@
                                         <h1>{{name}}</h1>
                                         <h2><span>Location:</span> {{location}}</h2>
                                         <h2><span>Date:</span> {{date}}</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt culpa nemo dolorem debitis voluptatem! Exercitationem provident odio autem eos libero consequuntur mollitia repellat fugiat, sit, culpa eum corrupti nulla.</p>
+                                        <h2><span>Price:</span> {{price}}</h2>
+                                        <p>{{description}}</p>
     
                                     </div>
                                     <i class="fas fa-caret-down"></i>

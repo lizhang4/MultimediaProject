@@ -21,44 +21,10 @@
 
     <!-- About Us Section -->
     <section class="feature-posts p-0 m-0 d-flex flex-column align-items-center justify-content-center">
-        <div class="upper-box my-3 p-0 h-100 w-100 slideup">
-            <div class="box-1 row m-0 my-5 p-0 py-3">
-                <h4 class="m-0 p-0 col-lg-2 col-md-2 col-12 text-center text-md-start my-3">About Us</h4>
-                <div class="col-lg-4 col-md-2 col-0"></div>
-                <div class="col-lg-6 col-md-8 col-12" >
-                    <p>The principal goals of the Dynasty Museum are to collect, preserve, research, publish, and exhibit distinguished examples representing the art of the ancient chinese cold-weapons. Ancient chinese cold-weapons have been a vital part of the chinese cultures for thousands of years, pivotal not only in conquest and defense, but also in court pageantry and ceremonial events.</p>
-                    <p>Throughout time the best weapons have represented the highest artistic and technical capabilities of the society and period in which they were made, forming a unique aspect of both art history and material culture.</p>
-                    <p>The Dynasty gallery of weapons is a modern one, formed through the activities and interests of curators, trustees, private collectors, and donors over the past 125 years. The gallery comprises approximately 100 objects from the Ancient Three Kingdom. It is one of the most comprehensive and encyclopedic galleries of its kind.</p>    
-                </div>
-
-            </div>
-
-            <div class="box-1 row m-0 my-5 p-0 py-3 slideup">
-                <h4 class="m-0 p-0 col-lg-2 col-md-2 col-12 text-center text-md-start my-3">FAQ</h4>
-                <div class="col-lg-4 col-md-2 col-0"></div>
-                <div class="col-lg-6 col-md-8 col-12" >
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
-    
-                </div>
-
-            </div>
-
-            <div class="box-1 row m-0 my-5 p-0 py-3 slideup">
-                <h4 class="m-0 p-0 col-lg-2 col-md-2 col-12 text-center text-md-start my-3">Contact Us</h4>
-                <div class="col-lg-4 col-md-2 col-0"></div>
-                <div class="col-lg-6 col-md-8 col-12" >
-                    <p><span>You can find us here:</span> England ,Glasgow, 4578 Marmora Road</p>
-                    <p><span>Phone:</span> +6012345678</p>
-                    <p><span>Monday to Friday</span> from 9.00am to 8.00pm</p>
-                    <p><span>Saturday</span> from 10.00am to 6.00pm</p>
-                    <p>info.dynastymuseum@dm.com</p>
-    
-                </div>
-            </div>
+        <div class="upper-box d-flex justify-content-between align-items-center ">
+            <h4>Find us here</h4>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.224277841487!2d120.1366724516063!3d30.316137841234898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344b621fde1e6cd7%3A0x4aeb25871fa2e025!2sChina%20Knives%2C%20Scissors%20and%20Swords%20Museum!5e0!3m2!1sen!2smy!4v1625584937777!5m2!1sen!2smy" width="1150" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
     <!-- End About Us Section -->
 

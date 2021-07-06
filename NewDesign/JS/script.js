@@ -115,12 +115,49 @@ var weapons = [
     },
 
     {
-        name: "Double-Iron Halberd",
-        weaponType: "Halberd",
+        name: "Qamdo Military Attache's Waist Sword",
+        weaponType: "Sword",
         weilder: "Dian Wei",
-        date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DianWei.png",
-        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+        date: "Ming Dynasty",
+        imageUrl: "./imgs/QamdoMilitaryAttacheWaistSword.png",
+        description: "This sword was originally stored in the hands of the descendants of the Baili chieftain in Qamdo area. The whole sword is huge. The handle and the handle are inscribed with flowers and gold. The center is hollowed out and embedded with a silver hammer to press the pieces, and the handle is embedded with coral. The stalls are made of Yunzhi-type ferrous gold, the sheath is made of wood and the skin of the thigh, with a ridge in the middle. Sheath frame iron hollow gold. The blade is wider and thicker than ordinary Tibetan sword, and the satin pattern is clear and flowing. The shape of the lifting beam is relatively special. The hanging pendants are not connected, but are riveted to the iron frame. The sheath bundle is riveted to the hanging pendants with double iron rings. This style is similar to the Hall area saber and is a legacy of Mongolian pendants.",
+    },
+
+    {
+        name: "Curly Grass Pattern Tibetan Sword",
+        weaponType: "Sword",
+        weilder: "Dian Wei",
+        date: "Ming Dynasty",
+        imageUrl: "./imgs/CurlyGrassPatternTibetanSword.png",
+        description: "This short sword is originated from Danba County, at the junction of Khampa and Amdo, so the style of the sword is not pure Khampa or Amdo style. The parts of this sword are complete without patchwork. The equipment is decorated with iron and gold. The sheath tail has a ridge in the middle, and the bottom is gui-shaped. It widens along the direction of the sheath opening. Slightly diamond-shaped, the sword grid is rectangular, belonging to the Kamba style, the handle is bundled, and the front of the handle has a slight ridge line, and the handle is inlaid with a coral seat in the shape of a shank. The sheath is wrapped in wood and leather. The gold decoration of the sheath tail is a typical twisted branch. This twisted branch style is common in statues and utensils in the Central Plains and Tibet. It is mainly decorated on the side strips. This pattern on the scabbard is extremely rare. There should be a gem inlay seat in the middle of the sheath mouth, with a twisting pattern from the center to the four corners. This twisting style is relatively early, and the style of shank bundle and shank twisting is the same as the sheath mouth. The forging of the blade is excellent, the iron is pure, and the blade is a typical ancient division. This knife is one of the most sophisticated Tibetan short swords known at present. Judging from the decoration and shape, it is judged to be a short sword in the late Ming Dynasty as a whole. Judging from the grade and the sophistication of the production, it was carried by a certain nobleman or chieftain.",
+    },
+
+
+    {
+        name: "Khampa Military Attache Sabre",
+        weaponType: "Sabre",
+        weilder: "Dian Wei",
+        date: "Qing Dynasty",
+        imageUrl: "./imgs/KhampaMilitaryAttacheSabre.png",
+        description: "This sabre was a military officer's sabre in Tibetan areas in the Qing Dynasty. Equipped with iron, a wishful-shaped knife head, inlaid with a red coral. Trapezoidal handles, the front is hollowed out and decorated with gold curled grass patterns, and the side is silver. The handle wood is wrapped with silver silk, plain gold, with two protrusions on the front and back, connecting grooves in the middle, and one protrusion on the left and right sides, and the folded edge is decorated with string patterns of varying thickness. The sheath frame is encapsulated as a whole, the front edge is ribbed, and the hollow is decorated with golden curled grass pattern, and the side is engraved with silver swastika pattern. The sheath tail is in a 'U' shape, and the left and right ends enclose the sheath frame, and are welded together with the sheath frame. It is not made in one piece. The sheath is made of wood, wrapped in strands of skin, with ridges in the middle, covered with silver sheets on the upper and lower ends, and hammered and engraved with curly grass patterns and lotus terrace patterns. Two plain iron hoops and sheath bundles, riveted to handle beams, and hung with gold to make auspicious clouds. The blade is straight-edged, the root of the blade is slightly wider than the tip, the back of the blade is ridged, the cutting edge is forged with flowing water, and the forging pattern is turned back to the root at the 1/3 of the tip. The overall size of the blade is large and very strong.",
+    },
+
+    {
+        name: "Iron and gold curled grass pattern Tibetan spear",
+        weaponType: "Spear",
+        weilder: "Dian Wei",
+        date: "Ming Dynasty",
+        imageUrl: "./imgs/IronAndGoldCurledGrassPatternTibetanSpear.png",
+        description: "This spear has a high ridge and a wide blood trough. The middle section is separated by a rope knot, and the blood trough is decorated with golden curly grass. This spear is a large-size Tibetan spear with a high degree of gold retention. It was a high-level ritual tool used by Tibetan nobles in the Ming Dynasty.",
+    },
+
+    {
+        name: "Tibetan Iron And Gold Flame Spear",
+        weaponType: "Spear",
+        weilder: "Dian Wei",
+        date: "Ming Dynasty",
+        imageUrl: "./imgs/TibetanIronAndGoldFlameSpear.png",
+        description: "This spear is a weapon held by the God of Horse Tau Ming in Tibetan Buddhism, which symbolizes piercing and cutting off various prejudices and prejudices. This spear is derived from the iron spear in the ancient Indian war. The blade shape is like a wide sword with waistband, the gun tip is gold spray pattern on both sides, the gun body is silver pattern, the multi-edge gun hoop is gold and silver mutually, the color matching is luxurious and pleasing, the casing copper hoop is intact, and the whole tool has no blade cutting Longitudinal flaws. This spear is a combination of weapons and magical weapons.",
     },
 
     {
@@ -128,44 +165,8 @@ var weapons = [
         weaponType: "Halberd",
         weilder: "Dian Wei",
         date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DianWei.png",
-        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
-    },
-
-    {
-        name: "Double-Iron Halberd",
-        weaponType: "Halberd",
-        weilder: "Dian Wei",
-        date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DianWei.png",
-        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
-    },
-
-    {
-        name: "Double-Iron Halberd",
-        weaponType: "Halberd",
-        weilder: "Dian Wei",
-        date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DianWei.png",
-        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
-    },
-
-    {
-        name: "Double-Iron Halberd",
-        weaponType: "Halberd",
-        weilder: "Dian Wei",
-        date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DianWei.png",
-        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
-    },
-
-    {
-        name: "Double-Iron Halberd",
-        weaponType: "Halberd",
-        weilder: "Dian Wei",
-        date: "1512 - 1515 ca.",
-        imageUrl: "./imgs/DianWei.png",
-        description: "This halberd is owned by Dian Wei. The left hand halberd weighs 39 kilograms, and the right hand halberd weighs 41 kilograms. It is only made of ordinary iron, but in Dianwei’s hands, it is like flying and charging into battle. At last, Dian Wei lost and die in a fight because his halberd has been stolen by others in a midnight.",
+        imageUrl: "./imgs/TibetanIronAndGoldFlameSpear.png",
+        description: "This spear is a weapon held by the God of Horse Tau Ming in Tibetan Buddhism, which symbolizes piercing and cutting off various prejudices and prejudices. This spear is derived from the iron spear in the ancient Indian war. The blade shape is like a wide sword with waistband, the spear tip is gold spray pattern on both sides, the spear body is silver pattern, the multi-edge gun hoop is gold and silver mutually, the color matching is luxurious and pleasing, the casing copper hoop is intact, and the whole tool has no blade cutting Longitudinal flaws. This spear is a combination of weapons and magical weapons.",
     },
 
 

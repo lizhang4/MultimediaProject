@@ -20,7 +20,8 @@ body {
 }
 
 .gallery-carousel {
-    margin: 10vh auto;
+    margin: 0 auto !important;
+    margin-top: 10vh !important;
     width: 95%; 
     max-width: 1150px;
     height: 40vw;

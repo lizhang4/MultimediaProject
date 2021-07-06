@@ -3,11 +3,21 @@
 
 $(Document).ready(function() {
     $(".fa-caret-up").hide();
-    $(".information").scroll(function () { 
-        var y = $(this).scrollTop();
+    
+    
+    // console.log("123");
+    // if ($(".information").scrollTop + $(".information").innerHeight() > $(".information")[0].scrollHeight -1) {
+    //     $(".fa-caret-down").hide();
 
-        var z = $(this)[0].scrollHeight;
-        var sum = y + $(this).innerHeight();
+    // }
+        
+        
+        $(".information").scroll(function () { 
+            var y = $(this).scrollTop();
+            var z = $(this)[0].scrollHeight;
+            var sum = y + $(this).innerHeight();
+
+        
         
         if(y == 0) {
             $(".fa-caret-up").hide();

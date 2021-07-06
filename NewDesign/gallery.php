@@ -14,7 +14,7 @@
 
     <!-- Gallery Page Carousel Section -->
     <section class=" gallery-carousel d-flex flex-column">
-        <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
+        <img src="./imgs/TopCarousel-2.png" alt="">
         <h4>Welcome to gallery page</h4>
     </section>
     <!-- End Gallery Page Carousel Section -->
@@ -58,10 +58,10 @@
                 </div>
                 
                 <div class="modal fade" id="weapon{{@index}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
                             <div class="modal-body d-flex flex-md-row justify-content-md-around align-items-md-center">
-                                <div class="box d-md-flex d-none">
+                                <div class="box d-lg-flex d-none">
                                     <div class="content">
                                         <img src="{{imageUrl}}" alt="">
                                     </div>

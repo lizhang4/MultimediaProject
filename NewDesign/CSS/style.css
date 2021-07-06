@@ -330,7 +330,8 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     min-height: fit-content;
     width: 95%; 
     max-width: 1150px;
-    margin: 150px auto !important;
+    margin: 0px auto !important;
+    margin-bottom: 150px !important;
     
 }
 
@@ -594,11 +595,11 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .exhibition-carousel .exibition-item-container .information h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 
 .exhibition-carousel .exibition-item-container .information p {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .exhibition-carousel .exibition-item-container .information a {
@@ -612,34 +613,6 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .exhibition-carousel .exibition-item-container .information a:hover {
     color: #969696;
 } 
-
-
-.exhibition-carousel .lower-box .upper-content {
-    width: 100%;
-    height: 80% !important;
-}
-
-.exhibition-carousel .lower-box .upper-content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.exhibition-carousel .lower-box .lower-content{
-    padding-top: 15px;
-}
-
-.exhibition-carousel .lower-box .lower-content h5 {
-    font-size: 0.85rem;
-    font-weight: 400;
-    letter-spacing: 0.07rem;
-    color: black;
-}
-
-.exhibition-carousel .lower-box .lower-content p {
-    font-size: 0.8rem;
-    letter-spacing: 0.2rem;
-}
 
 /* End Exhibition-carousel Section */
 

@@ -104,54 +104,29 @@
                 </a>
             </div>
             <div class="lower-box d-flex flex-column justify-content-start align-items-center">
-                <!-- <div class="swiper-container exhibitionSwiper w-100 h-100">
-                    <div class="swiper-wrapper w-100 h-100">
-                        <div class="swiper-slide w-100 h-100">
-                            <div class="upper-content">
-                                <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
-                            </div>
-                            <div class="lower-content">
-                                <h5>Sword Exhibition</h5>
-                                <p>2021/6/15 - 25</p>
-                            </div>
-                            
-                        </div>
-                        <div class="swiper-slide w-100 h-100">
-                            <div class="upper-content ">
-                                <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
-                            </div>
-                            <div class="lower-content">
-                                <h5>Sword Exhibition</h5>
-                                <p>2021/6/15 - 25</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div> -->
 
                 <div class="exibition-item-container row w-100 slideup">
                     <div class="img col-md-6 col-12">
                         <div class="content">
-                            <img src="./imgs/_DSC0002.JPG" alt="">
+                            <img src="./imgs/Exhibition1.jfif" alt="">
                         </div>
                     </div>
                     <div class="information col-md-6 col-12 d-flex flex-column justify-content-center">
-                        <h1>Event N3</h1>
-                        <p>rem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna lorem. Quisque interdum lorem vitae luctus congue. Sed bibendum urna ex, vitae rhoncus magna fermentum et. </p>
+                        <h1>Grand Exhibition Of Ancient Arms & Armours</h1>
+                        <p>Ancient weapons can be divided into cold weapons and fire weapons. The original purpose of cold weapons is cold and ruthless beauty, which cannot be replaced by other crafts. The complete structure of a sword, accurate control of power points, and delicate and ingenious carving decorations And so on, are the highest crystallization of the wisdom of the ancients, and also another aspect of aesthetic expression. This exhibition lays out the contents of the display on a timeline, compares the production technology of weapons in different periods, from the wood and stone weapon period to the introduction of modern art swords, etc., emphasizes the beauty of weapons through objects, shows the perfect composition of weapons in structural form, and experiences traditional culture.</p>
                         <a href="./exhibition.php"><i class="fas fa-chevron-right"></i>See More</a>
                     </div>
                 </div>
 
                 <div class="exibition-item-container row w-100 slideup">
                     <div class="information order-1 order-md-0 col-md-6 col-12 d-flex flex-column justify-content-center">
-                    <h1>Event N4</h1>
-                        <p>rem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna lorem. Quisque interdum lorem vitae luctus congue. Sed bibendum urna ex, vitae rhoncus magna fermentum et. </p>
+                        <h1>Exhibition of Ancient Chinese Cold Weapons</h1>
+                        <p>This exhibition will exhibit 187 ancient weapons from more than 30 collectors across the country, dating from the Shang and Zhou Dynasties to modern times. The materials include bronze and iron. The types cover ritual weapons and actual combat weapons. It fully demonstrates the development of ancient Chinese cold weapons process.</p>
                         <a href="./exhibition.php"><i class="fas fa-chevron-right"></i>See More</a>
                     </div>
                     <div class="img col-md-6 col-12 order-0 order-md-1">
                         <div class="content">
-                            <img src="./imgs/_DSC0002.JPG" alt="">
+                            <img src="./imgs/Exibition2.jpeg" alt="">
                         </div>
                     </div>
                 </div>
@@ -260,7 +235,7 @@
                 </div>
                 
                 <div class="modal fade" id="weapon{{@index}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
                             <div class="modal-body d-flex flex-md-row justify-content-md-around align-items-md-center">
                                 <div class="box d-md-flex d-none">
