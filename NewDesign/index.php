@@ -103,8 +103,8 @@
                     <h4>See More</h4>
                 </a>
             </div>
-            <div class="lower-box slideup">
-                <div class="swiper-container exhibitionSwiper w-100 h-100">
+            <div class="lower-box d-flex flex-column justify-content-start align-items-center">
+                <!-- <div class="swiper-container exhibitionSwiper w-100 h-100">
                     <div class="swiper-wrapper w-100 h-100">
                         <div class="swiper-slide w-100 h-100">
                             <div class="upper-content">
@@ -128,39 +128,38 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                </div> -->
+
+                <div class="exibition-item-container row w-100 slideup">
+                    <div class="img col-md-6 col-12">
+                        <div class="content">
+                            <img src="./imgs/_DSC0002.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="information col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h1>Event N3</h1>
+                        <p>rem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna lorem. Quisque interdum lorem vitae luctus congue. Sed bibendum urna ex, vitae rhoncus magna fermentum et. </p>
+                        <a href="./exhibition.php"><i class="fas fa-chevron-right"></i>See More</a>
+                    </div>
+                </div>
+
+                <div class="exibition-item-container row w-100 slideup">
+                    <div class="information order-1 order-md-0 col-md-6 col-12 d-flex flex-column justify-content-center">
+                    <h1>Event N4</h1>
+                        <p>rem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna lorem. Quisque interdum lorem vitae luctus congue. Sed bibendum urna ex, vitae rhoncus magna fermentum et. </p>
+                        <a href="./exhibition.php"><i class="fas fa-chevron-right"></i>See More</a>
+                    </div>
+                    <div class="img col-md-6 col-12 order-0 order-md-1">
+                        <div class="content">
+                            <img src="./imgs/_DSC0002.JPG" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     <!-- End Exhibition Carousel Section -->
     
     
-    <!-- Footer Section -->
-        <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
-            
-                <div class="col-12 order-2 social-media-container d-flex justify-content-between align-align-items-end">
-                <div class="social-handles">
-                    <a href="https://www.instagram.com/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.linkedin.com">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <div class="pages-link">
-                    <a href="about.php" class="about-us">About Us</a>
-                    <a href="about.php" class="faq">FAQ</a>
-                    <a href="about.php" class="contact-us">Contact Us</a>
-                </div>
-        
-                </div>
-            </div>
-        </footer>
-
-
-    <!-- End Footer Section -->
     
     
     

@@ -15,7 +15,7 @@
     <!-- About Us Page Carousel Section-->
     <section class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/tumblr_morjixuQbE1rx8jvdo1_640.jpg" alt="">
-        <h4>Welcome to about page</h4>
+        <h4>Visit us now</h4>
     </section>
     <!-- End About Us Page Carousel Section-->
 
