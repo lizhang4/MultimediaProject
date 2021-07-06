@@ -71,7 +71,11 @@
                 </div>
 
                 <div class="col-sm-6 col-6 d-flex d-lg-none justify-content-end align-items-center m-0 p-0">
-                    <button id="nav-open">open</button>
+                    <button id="nav-open">
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>    
+                    </button>
                 </div>
 
             </div>
@@ -111,8 +115,14 @@
 
     <script>
         $("#nav-open").click(function () { 
+            $(this).toggleClass("is-active");
             if( $(".nav-popup").css("display") == "flex") {
                 $(".nav-popup").slideUp();
+                $("body").css({
+                    overflow: "visible"
+                });
+
+                
             }
             else {
                 $(".nav-popup").slideDown({
@@ -120,8 +130,13 @@
                         $(this).css({
                             display: "flex"
                         });
+                        $("body").css({
+                            overflow: "hidden"
+                        });
                     }
                 });
+
+                
 
             }
         });

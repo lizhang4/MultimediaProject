@@ -1,5 +1,70 @@
 
 
+#nav-open {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+#nav-open .btn-line {
+    display: flex;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    border-radius: 3px;
+    position: absolute;
+    transition: .5s;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+
+#nav-open .btn-line:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+#nav-open .btn-line:nth-child(2) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#nav-open .btn-line:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+#nav-open:hover .btn-line:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nav-open:hover .btn-line:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+#nav-open.is-active .btn-line:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+#nav-open.is-active .btn-line:nth-child(2){
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+#nav-open.is-active .btn-line:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(45deg);
+}
+
+
+
+
+
 
 
 

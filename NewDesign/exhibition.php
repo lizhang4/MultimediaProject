@@ -38,16 +38,28 @@
 
     
     <!-- Footer Section -->
-    <footer class=" p-0 py-5 d-flex flex-column align-items-center justify-content-start h-50 my-5 ">
-        <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row">
-            
-            <div class="col-12 order-2 social-media-container d-flex justify-content-center align-items-center">
-                <i class="fab fa-facebook m-3"></i>
-                <i class="fab fa-facebook m-3"></i>
-                <i class="fab fa-facebook m-3"></i>
+    <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
+                <div class="col-12 order-2 social-media-container d-flex justify-content-between align-align-items-end">
+                <div class="social-handles">
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="pages-link">
+                    <a href="about.php" class="about-us">About Us</a>
+                    <a href="about.php" class="faq">FAQ</a>
+                    <a href="about.php" class="contact-us">Contact Us</a>
+                </div>
+        
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     <!-- End Footer Section -->
 </div>
 

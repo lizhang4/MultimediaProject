@@ -20,8 +20,12 @@
 
 
                    </div>
-                   <div class="swiper-slide item">
-                       <img src="./imgs/TopCarousel-2.png" alt="">
+                   <div class="swiper-slide item d-flex flex-column justify-content-center align-items-center">
+                       <!-- <img src="./imgs/TopCarousel-2.png" alt=""> -->
+                       <h1 class="text-uppercase text-center">Dynasty</h1>
+                       <h5 class="text-uppercase text-center">Weapon Museum</h5>
+                       <div class="line text-center"></div>
+
                    </div>
                    <div class="swiper-slide item">
                        <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
@@ -132,23 +136,24 @@
     
     <!-- Footer Section -->
         <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
-            <!-- <div class="upper-box d-flex justify-content-center align-items-center d-block d-md-none">
-                <h2>Dynasty Museum</h2>
-            </div>
-            <div class="lower-box d-flex justify-content-center justify-content-md-between align-items-start row slideup">
-                <div class="col-md-6 order-md-0 order-1 col-12 left-container">
-                    <h2 class="d-none d-md-block">Dynasty Museum</h2>
-                    <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
-                    <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
-                    <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestiae modi voluptatum voluptate numquam hic aliquam accusantium nobis nemo alias laudantium, atque voluptatem ipsam dolores asperiores quaerat harum nesciunt blanditiis?</p>
+            
+                <div class="col-12 order-2 social-media-container d-flex justify-content-between align-align-items-end">
+                <div class="social-handles">
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
-                <div class="col-md-6 order-md-1 order-0 col-12 right-container my-md-0 my-4" >
-                    <img src="./imgs/sculpture-2013048_1920.jpg" alt="">
-                </div> -->
-                <div class="col-12 order-2 social-media-container d-flex justify-content-center align-items-center">
-                    <i class="fab fa-facebook m-3"></i>
-                    <i class="fab fa-facebook m-3"></i>
-                    <i class="fab fa-facebook m-3"></i>
+                <div class="pages-link">
+                    <a href="about.php" class="about-us">About Us</a>
+                    <a href="about.php" class="faq">FAQ</a>
+                    <a href="about.php" class="contact-us">Contact Us</a>
+                </div>
         
                 </div>
             </div>
@@ -244,7 +249,7 @@
     <!-- Handlebars JS template -->
     <script id="weapon-card-template" type="text/x-handlebars-template">
         {{#each weapons}}
-            {{#lesserThan @index 8}}
+            {{#lesserThan @index 4}}
             <a href="" class="image {{weaponType}} itembox slideup" data-bs-toggle="modal" data-bs-target="#weapon{{@index}}" >
                 <div class="content">
                     <img src="{{imageUrl}}" alt="">
