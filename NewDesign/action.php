@@ -26,7 +26,7 @@
                 {
                     $userdata = mysqli_fetch_assoc($result);
 
-                    if($userdata['password'] == $password)
+                    if($userdata['password'] == md5($password))
                     {
                         $_SESSION['username'] = $userdata['username'];
                         echo '1';//log in successfully
@@ -42,21 +42,21 @@
                 }
             }
         }
-        elseif(!empty($username) || !empty($password))
-        {
-            if(!empty($username))
-            {
-                echo '4';//password is blank
-            }
-            else
-            {
-                echo '5';//username is blank
-            }
-        }
-        else
-        {
-            echo '6';//both are blank
-        }
+        // elseif(!empty($username) || !empty($password))
+        // {
+        //     if(!empty($username))
+        //     {
+        //         echo '4';//password is blank
+        //     }
+        //     else
+        //     {
+        //         echo '5';//username is blank
+        //     }
+        // }
+        // else
+        // {
+        //     echo '6';//both are blank
+        // }
     }
 
     //logout
@@ -80,7 +80,7 @@
             $result1 = mysqli_query($con, $query1);
             if(mysqli_num_rows($result1) == 0 && ($password == $repassword))
             {
-                $query = "insert into user (username, password, email) values ('$username', '$password', '$email')";
+                $query = "insert into user (username, password, email) values ('$username', md5('$password'), '$email')";
                 mysqli_query($con, $query);
                 $_SESSION['username'] = $username;
                 echo '1';// success
@@ -91,7 +91,7 @@
             }
             else
             {
-                // echo '3';//password not match
+                echo '3';//password not match
             }
         }
         else

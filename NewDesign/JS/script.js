@@ -20,8 +20,17 @@ var weapons = [
         weaponType: "Sabre",
         weilder: "Guan Yu",
         date: "ThreeKingdom",
-        imageUrl: "./imgs/TheGreenDragonCrescentMoonSabre.jfif",
+        imageUrl: "./imgs/GuanYu.png",
         description: "The Green Dragon Crescent-Moon Sabre is one of the Yanyue Swords. According to documentary records and unearthed cultural relics, the Yanyue Swords began to appear in the Song Dynasty. Due to its weight, it was mainly used to practice arm strength, not as a weapon in actual combat. The Green Dragon Crescent-Moon Sabre is a weapon used by Guan Yu. The book describes the Green Dragon Crescent-Moon Sabre weighing 82 kilograms, also known as the Leng Yan Saw. Guan Yu used it to kill many generals, so later generations also called the Green Dragon Crescent-Moon Sabre as the Guan Dao.",
+    },
+
+    {
+        name: "Sword Of Heaven",
+        weaponType: "Sword",
+        weilder: "Cao Cao",
+        date: "ThreeKingdom",
+        imageUrl: "./imgs/YiTianJian.png",
+        description: 'This sword appears in the forty-one chapter of “romance of the three kingdoms”. This sword was originally owned by Cao Cao. It is said to be extremely sharp, cutting iron like mud. Cao Cao used the sword to kill Lu Boshe’s family by mistake, and sigh “I would rather take the world, and stop teaching the world to take me”. The Sword of Heaven and Qing Gang Sword were collectively called "Peerless Double Swords", both of which were owned by Cao Cao. Cao Cao used the sword of heaven to suppress his might and the Qing Gang Sword to kill. Cao Cao always bring this sword with him to manifest his status.'
     },
 
     {
@@ -29,17 +38,8 @@ var weapons = [
         weaponType: "Spear",
         weilder: "Zhang Fei",
         date: "ThreeKingdom",
-        imageUrl: "./imgs/ZhangBaSerpentHeadedSpear.jpg",
-        description: "Zhang Ba Serpent-headed Spear, the name of an ancient weapon. Also known as Zhang eight-point steel spear. It is all made of iron point steel. The spear is one foot long and the spear tip is eight inches long. The blade has double fronts, and it is shaped like a snake, hence the name. The Zhangba Snake Lance is comparable to the Qinglong Yanyue Dao, and it is famous all over the world. This zhangba snake spear, the tip of the spear is like a white snake, and the body of the spear weighing more than fifty kilograms, sweeps the battlefield in the black brocade, picks the enemy through armor, and shoots at the enemy, and there is one. The enemy general was stabbed to death under the eight snake spear, which is a symbol of the fear of the enemy general.",
-    },
-
-    {
-        name: "Bronze Sword",
-        weaponType: "Sword",
-        weilder: "Cao Cao",
-        date: "ThreeKingdom",
-        imageUrl: "./imgs/BronzeSword.jfif",
-        description: "The Bronze Sword, a weapon that is as famous as the Reliant Sword. It cuts iron like mud and is extremely sharp. It is one of the two swords owned by Cao Cao, with the word ‘Qing Yan’ inlaid in gold on the hilt. The sword was always matched by Xiahouen. Later, Xiahouen was stabbed to death by Zhao Yun and belonged to Zhao Yun. He fell into the land of no one among Cao Cao’s thousands of horses. He cut down both sides of the banner, seized three swords, and stabbed and killed. More than 50 famous generals in Cao Ying died and became famous in the first battle.",
+        imageUrl: "./imgs/ZhangFei.png",
+        description: "Zhang Ba Serpent-headed Spear, the name of an ancient weapon. Also known as Zhang eight-point steel spear. It is all made of iron point steel. The spear is one foot long and the spear tip is eight inches long. The spear has double fronts, and it is shaped like a snake, hence the name. The Zhang Ba Serpent-headed Spear is comparable to the Green Dragon Crescent-Moon Sabre, and it is famous all over the world. The tip of the spear is like a white snake, and the body of the spear weighing more than fifty kilograms, sweeps the battlefield in the black brocade, picks the enemy through armor, and shoots at the enemy, and there is one. The enemy general was stabbed to death under the spear, which is a symbol of the fear of the enemy general.",
     },
 
     {
@@ -52,21 +52,35 @@ var weapons = [
     },
 
     {
+        name: "Qamdo Military Attache's Waist Sword",
+        weaponType: "Sword",
+        weilder: "Dian Wei",
+        date: "Ming",
+        imageUrl: "./imgs/QamdoMilitaryAttacheWaistSword.png",
+        description: "This sword was originally stored in the hands of the descendants of the Baili chieftain in Qamdo area. The whole sword is huge. The handle and the handle are inscribed with flowers and gold. The center is hollowed out and embedded with a silver hammer to press the pieces, and the handle is embedded with coral. The stalls are made of Yunzhi-type ferrous gold, the sheath is made of wood and the skin of the thigh, with a ridge in the middle. Sheath frame iron hollow gold. The blade is wider and thicker than ordinary Tibetan sword, and the satin pattern is clear and flowing. The shape of the lifting beam is relatively special. The hanging pendants are not connected, but are riveted to the iron frame. The sheath bundle is riveted to the hanging pendants with double iron rings. This style is similar to the Hall area saber and is a legacy of Mongolian pendants.",
+    },
+    
+
+    
+
+    {
+        name: "Qing Gang Sword",
+        weaponType: "Sword",
+        weilder: "Cao Cao",
+        date: "ThreeKingdom",
+        imageUrl: "./imgs/BronzeSword.jfif",
+        description: "The Qing Gang Sword, a weapon that is as famous as the Reliant Sword. It cuts iron like mud and is extremely sharp. It is one of the two swords owned by Cao Cao, with the word ‘Qing Yan’ inlaid in gold on the hilt. The sword was always matched by Xiahouen. Later, Xiahouen was stabbed to death by Zhao Yun and belonged to Zhao Yun. He fell into the land of no one among Cao Cao’s thousands of horses. He cut down both sides of the banner, seized three swords, and stabbed and killed. More than 50 famous generals in Cao Ying died and became famous in the first battle.",
+    },
+
+    
+
+    {
         name: "Seven Star Sword",
         weaponType: "Sword",
         weilder: "Cao Cao",
         date: "ThreeKingdom",
         imageUrl: "./imgs/SevenStarSword.png",
         description: "This sword appears in the forth chapter of “romance of the three kingdoms”. It was originally owned by Situ Wang Yun. When Cao Cao assassinated Dong Zhuo, he borrowed a sword from Wang Yun to assassinate him. After the assassination failed, Cao Cao dedicated the sword to Dong Zhuo. After Dong Zhuo was killed by Wang Yun, this sword returned to Wang Yun's hand. Soon, Dong Zhuo's army team attacked Li Chang into Chang'an. Wang Yun was killed in the fight, the sword fallen into Li Chang's hand. Later, Li Chang was killed by Cao Cao's troops. At last, this sword fell into the hands of Cao Cao.",
-    },
-
-    {
-        name: "Sword Of Heaven",
-        weaponType: "Sword",
-        weilder: "Cao Cao",
-        date: "ThreeKingdom",
-        imageUrl: "./imgs/YiTianJian.png",
-        description: 'This sword appears in the forty-one chapter of “romance of the three kingdoms”. This sword was originally owned by Cao Cao. It is said to be extremely sharp, cutting iron like mud. Cao Cao used the sword to kill Lu Boshe’s family by mistake, and sigh “I would rather take the world, and stop teaching the world to take me”. The Sword of Heaven and Qing Gang Sword were collectively called "Peerless Double Swords", both of which were owned by Cao Cao. Cao Cao used the sword of heaven to suppress his might and the Qing Gang Sword to kill. Cao Cao always bring this sword with him to manifest his status.'
     },
 
     {
@@ -114,14 +128,7 @@ var weapons = [
         description: "A long-handle blade is a common weapon in three kingdoms. It is a long weapon. It is actually a knife with long-handle. The famous general that use long-handle knife is Cao Hong.",
     },
 
-    {
-        name: "Qamdo Military Attache's Waist Sword",
-        weaponType: "Sword",
-        weilder: "Dian Wei",
-        date: "Ming",
-        imageUrl: "./imgs/QamdoMilitaryAttacheWaistSword.png",
-        description: "This sword was originally stored in the hands of the descendants of the Baili chieftain in Qamdo area. The whole sword is huge. The handle and the handle are inscribed with flowers and gold. The center is hollowed out and embedded with a silver hammer to press the pieces, and the handle is embedded with coral. The stalls are made of Yunzhi-type ferrous gold, the sheath is made of wood and the skin of the thigh, with a ridge in the middle. Sheath frame iron hollow gold. The blade is wider and thicker than ordinary Tibetan sword, and the satin pattern is clear and flowing. The shape of the lifting beam is relatively special. The hanging pendants are not connected, but are riveted to the iron frame. The sheath bundle is riveted to the hanging pendants with double iron rings. This style is similar to the Hall area saber and is a legacy of Mongolian pendants.",
-    },
+    
 
     {
         name: "Curly Grass Pattern Tibetan Sword",
@@ -129,7 +136,7 @@ var weapons = [
         weilder: "Dian Wei",
         date: "Ming",
         imageUrl: "./imgs/CurlyGrassPatternTibetanSword.png",
-        description: "This short sword is originated from Danba County, at the junction of Khampa and Amdo, so the style of the sword is not pure Khampa or Amdo style. The parts of this sword are complete without patchwork. The equipment is decorated with iron and gold. The sheath tail has a ridge in the middle, and the bottom is gui-shaped. It widens along the direction of the sheath opening. Slightly diamond-shaped, the sword grid is rectangular, belonging to the Kamba style, the handle is bundled, and the front of the handle has a slight ridge line, and the handle is inlaid with a coral seat in the shape of a shank. The sheath is wrapped in wood and leather. The gold decoration of the sheath tail is a typical twisted branch. This twisted branch style is common in statues and utensils in the Central Plains and Tibet. It is mainly decorated on the side strips. This pattern on the scabbard is extremely rare. There should be a gem inlay seat in the middle of the sheath mouth, with a twisting pattern from the center to the four corners. This twisting style is relatively early, and the style of shank bundle and shank twisting is the same as the sheath mouth. The forging of the blade is excellent, the iron is pure, and the blade is a typical ancient division. This knife is one of the most sophisticated Tibetan short swords known at present. Judging from the decoration and shape, it is judged to be a short sword in the late Ming Dynasty as a whole. Judging from the grade and the sophistication of the production, it was carried by a certain nobleman or chieftain.",
+        description: "This short sword is originated from Danba County, at the junction of Khampa and Amdo, so the style of the sword is not pure Khampa or Amdo style. The parts of this sword are complete without patchwork. This sword is decorated with iron and gold. The sheath tail has a ridge in the middle, and the bottom is gui-shaped. It widens along the direction of the sheath opening. Slightly diamond-shaped, the sword grid is rectangular, belonging to the Kamba style, the handle is bundled, and the front of the handle has a slight ridge line, and the handle is inlaid with a coral seat in the shape of a shank. The sheath is wrapped in wood and leather. The gold decoration of the sheath tail is a typical twisted branch. This twisted branch style is common in statues and utensils in the Central Plains and Tibet.It is mainly decorated on the side strips. This pattern on the scabbard is extremely rare. There should be a gem inlay seat in the middle of the sheath mouth, with a twisting pattern from the center to the four corners. This twisting style is relatively early, and the style of shank bundle and shank twisting is the same as the sheath mouth. The forging of the blade is excellent, the iron is pure, and the blade is a typical ancient division. This sword is one of the most sophisticated Tibetan short swords known at present. Judging from the decoration and shape, it is judged to be a short sword in the late Ming Dynasty as a whole. Judging from the grade and the sophistication of the production, it was carried by a certain nobleman or chieftain.",
     },
 
 
@@ -165,7 +172,7 @@ var weapons = [
         weaponType: "Sword",
         weilder: "Dian Wei",
         date: "Qin",
-        imageUrl: "./imgs/Qin/QinJian.jfif",
+        imageUrl: "./imgs/Qin/QinJian.png",
         description: "The most fascinating thing about the bronze weapons unearthed in Pit No. 1 and No. 2 of the Terracotta Warriors and Horses of Qin Shihuang is the sharp and tough Qin bronze long sword. The Qin sword with a willow-like blade is thin, long and pointed, with a length of 81-94.8 cm, which is far beyond the swords of other vassal states in the Warring States period (generally 50-65 cm in length).Looking back on the development of the Central Plains Bronze Sword, the blade has been continuously lengthening. When it first appeared, the length of the sword was only 20 or 30 centimeters; by the Spring and Autumn Period and the Warring States period, the length generally reached about 50-60 centimeters; in the late Warring States period, some swords exceeded 70 centimeters, and the maximum length was 75 or 76 centimeters. , The length of Guanzhong Qin Jian has reached a new level, exceeding 80 centimeters, and the longest one is nearly 95 centimeters.The Qin-style bronze sword is not only long, but also very sharp. Some swords were unearthed without rust, as bright as new, with sharp blades. After testing, it can still penetrate 18 layers of paper at one time. The surfaces of these swords are grayish-yellow, with fine tissues and no trachoma. Moreover, the surface of the blade has been finely filed and polished, so it is extremely smooth and bright.Qin Jian's sword body is very long, and the sword stem (handle) is also relatively long. Bronze swords unearthed from Pit No. 1 and No. 2 of the Qin Warriors have a stem length of about 17-20 cm. According to the length, weight, and practical functions of Qin swords, most of Qin swords are used with two hands (two-handed swords can also be used with one hand in some cases); a few with shorter stems may be one-handed swords.Research has found that this Qin sword uses anti-rust technology similar to modern chromium salt oxidation technology. This technology was invented by Germany and the United States in the 20th century. As early as two thousand years ago, Qin Jian would actually adopt this technique, so we have to praise the wisdom of the ancients.",
     },
 
@@ -174,7 +181,7 @@ var weapons = [
         weaponType: "Sword",
         weilder: "Dian Wei",
         date: "Qin",
-        imageUrl: "./imgs/Qin/QinTongPi.jfif",
+        imageUrl: "./imgs/Qin/QinTongPi.png",
         description: 'Beryllium is one of the famous long weapons in ancient times. It is a long-handled weapon that originated from short swords. Many beryllium soldiers unearthed in the past were mistaken for short swords. The shape of beryllium is very similar to a dagger. The front of beryllium is the same as that of a dagger. It has a flat ridge and two edges. The body of the beryllium is hexagonal in shape. The shape is very similar to a dagger. It is about 30-35 cm long and has a flat or rectangular stem at the back. , Used to install the stalk, generally a round hole is opened at the proximal end of the stem, so that the nail can be fixed on the long stalk. It is a kind of extremely sharp assassination weapon with a bamboo handle or wooden handle with a length of about 3 to 3.5 meters.',
     },
 

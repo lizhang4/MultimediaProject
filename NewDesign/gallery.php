@@ -16,7 +16,7 @@
     <section class=" gallery-carousel d-flex flex-column">
         <img src="./imgs/TopCarousel-2.png" alt="">
         <h4>Welcome to gallery page</h4>
-        <p>Weapon is one of the oldest tools of mankind. For humans without carapace, claws and sharp beaks, the weapon is their most important helper in order to survive in the jungle world where the weak and the strong. The acquisition of food, the manufacture of utensils, and the maintenance of life are all inseparable from the knife. In this sense, it can be said that human civilization has developed from the blade. However, it was civilization that changed the nature of the weapons. Since then, weapon has been linked to the prosperity and decline of a nation, which is particularly typical in the history of Chinese civilization. Fortunately, while the Chinese have developed world-renowned weapon technology and art, they have also used various weapons to create a rich and colorful culture and life. Just as we evaluate the sea, whether it is praise or curse, we have to admit that weapon is one of the greatest inventions of mankind.</p>
+        <p>Weapon is one of the oldest tools of mankind. For humans without carapace, claws and sharp beaks, the weapon is their most important helper in order to survive in the jungle world where the weak and the strong. The acquisition of food and war are all inseparable from the weapon. In this sense, it can be said that human civilization has developed from the blade. However, it was civilization that changed the nature of the weapons. Since then, weapon has been linked to the prosperity and decline of a nation, which is particularly typical in the history of Chinese civilization. Fortunately, while the Chinese have developed world-renowned weapon technology and art, they have also used various weapons to create a rich and colorful culture and life. Just as we evaluate the sea, whether it is praise or curse, we have to admit that weapon is one of the greatest inventions of mankind.</p>
     </section>
     <!-- End Gallery Page Carousel Section -->
 
@@ -63,22 +63,11 @@
                     <div class="selected order-0 px-1 m-0 d-flex justify-content-between align-items-center">All Dynasty <i class="fas fa-angle-down m-0 px-2 py-2"></i></div>
                 </div>
             </div>
-
-
-
-            <!-- <div class="filter d-none d-lg-flex">
-                <h4 class="list" data-filter="Sword">Sword</h4>
-                <h4 class="list" data-filter="Dao">Dao</h4>
-                <h4 class="list" data-filter="Spear">Spear</h4>
-                <h4 class="list" data-filter="Axe">Axe</h4>
-                <h4 class="list" data-filter="Others">Others</h4>
-                <h4 class="list active" data-filter="All" >All</h4>
-            </div> -->
         </div>
 
         <div class="info-container">
             <div class="dynasty-info All active">
-                <h4>Weapon gallery from Qin Dynasty to Qing Dynasty</h4>
+                <h4>Representative weapons of each dynasty</h4>
                 <p>The history of the knife can be traced back to the Stone Age. At that time, people made knives and used them as tools. Various forms of knives play many roles in production and life. In the civilized society, although the knife as a tool showed a wide range of functions, it also appeared in the war and played the role of a killing weapon. In ancient China, swords have experienced the development of the age of bronze, steel and firearms. They have been active on the social stage in different forms and roles. They have played an important role in maintaining the fortune of the country and developed world-famous sword skills. The bronze swords of the Warring States period, the ring-sword swords of the Han Dynasty, the Mo swords of the Tang Dynasty and the waist swords of the Ming Dynasty all played a frightening role in the history of war. At the end of the Qing Dynasty, with the end of the cold weapon era, the sword withdrew from the battlefield.</p>
             </div>
     

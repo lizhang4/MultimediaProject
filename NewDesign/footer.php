@@ -13,9 +13,9 @@
             </a>
         </div>
         <div class="pages-link">
-            <a href="about.php" class="about-us">About Us</a>
-            <a href="about.php" class="faq">FAQ</a>
-            <a href="about.php" class="contact-us">Contact Us</a>
+            <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> class="about-us">About Us</a>
+            <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> class="faq">FAQ</a>
+            <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> class="contact-us">Contact Us</a>
         </div>
 
         </div>
@@ -27,44 +27,50 @@
     
     <script>
          $('#form1').submit(function(e){
-            $.ajax({
-                type: "POST",
-                url: "action.php",
-                data: $("#form1").serialize(),
-                success:function(data)
-                {
-                    if(data == '1')
+            if (loginErrorHandler()) {
+                $.ajax({
+                    type: "POST",
+                    url: "action.php",
+                    data: $("#form1").serialize(),
+                    success:function(data)
                     {
-                        $('#form1').hide();
-                        location.reload();
+                        if(data == '1')
+                        {
+                            $('#form1').hide();
+                            location.reload();
+                        }
+                        else if(data == '2')
+                        {
+                            var form1 = $("#form1");
+                            $('.field').each(function () {
+                                if($(this).hasClass("password")) {
+                                    $(this).addClass("error");
+                                    $(this).addClass("shake");
+    
+                                }
+                            });
+                            
+                            var pass = form1.children(".password");
+                            pass.children(".error-text").html("Wrong Password!");
+                        }
+                        else 
+                        {
+                            var form1 = $("#form1");
+                            $('.field').each(function () {
+                                if($(this).hasClass("username")) {
+                                    $(this).addClass("error");
+                                    $(this).addClass("shake");
+    
+                                }
+                            });
+    
+                            var username = form1.children(".username");
+                            username.children(".error-text").html("Please register!");
+    
+                        }
                     }
-                    else if(data == '2')
-                    {
-                        alert('wrong password');
-                    }
-                    else if(data == '3')
-                    {
-                        alert('no such data please register');
-                        location.reload();
-                    }
-                    // else if(data == '4')
-                    // {
-                    //     alert('password is blank');
-                    // }
-                    // else if(data == '5')
-                    // {
-                    //     alert('username is blank');
-                    // }
-                    // else if(data == '6')
-                    // {
-                    //     alert('both field are required');
-                    // }
-                    // else
-                    // {
-                    //     alert('error');
-                    // }
-                }
-            });
+                });
+            }
             e.preventDefault();
         });
 
@@ -80,40 +86,60 @@
                     location.reload();
                 }
             });
+            e.preventDefault();
+
         });
         
         $('#form2').submit( function(e) { 
-            
-            $.ajax({
-                type: "POST",
-                url: "action.php",
-                data: $("#form2").serialize(),
-                success:function(data)
-                {
-                    console.log(data);
-                    if(data == '1')
-                    {
-                        $('#form2').hide();
-                        location.reload();
-                    }
-                    else if(data == '2')
-                    {
-                        // alert('registered username');
-                    var form2 = $("#form2");
-                    $('.field').each(function () {
-                        if($(this).hasClass("username")) {
-                            $(this).addClass("error");
-                        }
-                    });
-                        
-                    $(".error-text-username").html("Username existed!");
-                    $(".error-text-username").addClass("error");
-                    form2.children(".username").addClass("shake", "error");
-                }
+            if(registrationErrorHandler()) {
 
-            }
-        });
+                $.ajax({
+                    type: "POST",
+                    url: "action.php",
+                    data: $("#form2").serialize(),
+                    success:function(data)
+                    {
+                        if(data == '1')
+                        {
+                            $('#form2').hide();
+                            location.reload();
+                        }
+                        else if(data == '2')
+                        {
+                            var form2 = $("#form2");
+                            $('.field').each(function () {
+                                if($(this).hasClass("username")) {
+                                    $(this).addClass("error");
+                                    $(this).addClass("shake");
+    
+                                }
+                            });
+                                
+                            $(".error-text-username").html("Username existed!");
+                            $(".error-text-username").addClass("error");
+                        }
+                        else {
+                            var form2 = $("#form2");
+                            $('.field').each(function () {
+                                if($(this).hasClass("password") || $(this).hasClass("repassword")) {
+                                    $(this).addClass("error");
+                                    $(this).addClass("shake");
+    
+                                }
+                            });
+    
+                            var pass = form2.children(".password");
+                            var repass = form2.children(".repassword");
+    
+                            pass.children(".error-text").html("Password does not match");
+                            repass.children(".error-text").html("Password does not match");     
+                        }
+    
+                    }
+            });
+        }
         e.preventDefault();
+
 
 
     });    

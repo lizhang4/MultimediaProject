@@ -13,7 +13,7 @@
            <div class="swiper-container topSwiper w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                <div class="swiper-wrapper w-100 h-100">
                    <div class="swiper-slide item d-flex flex-column justify-content-center align-items-center">
-                       <h1 class="text-uppercase">Dynasty</h1>
+                       <h1 class="text-uppercase glow">Dynasty</h1>
                        <h5 class="text-uppercase">Weapon Museum</h5>
                        <div class="line"></div>
 
@@ -52,7 +52,7 @@
                     </div>
                     <h1 class="text-uppercase text-center">Dynasty Museum</h1>
                     <p class="">The principal goals of the Dynasty Museum are to collect, preserve, research, publish, and exhibit distinguished examples representing the art of the ancient chinese cold-weapons. Ancient chinese cold-weapons have been a vital part of the chinese cultures for thousands of years, pivotal not only in conquest and defense, but also in court pageantry and ceremonial events.</p>
-                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> style="color:white;">See More</a>
+                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> >See More</a>
                 </div>
                 <div class="col-0 col-md-1"></div>
             
@@ -134,14 +134,14 @@
         <div class = "login">
             <button class = "login_close">&times;</button>
             <header>Login</header>
-            <form id = "form1" action = "./action.php" method="POST" onsubmit="return loginErrorHandler()">
+            <form id = "form1" action = "./action.php" method="POST">
                 <div class="field username">
                     <div class="input-area">
                         <input type = "text" placeholder= "USERNAME" name="username">
                         <i class = "icon fas fa-user-alt"></i>
                         <i class = "error error-icon fas fa-exclamation-circle"></i>
                     </div>
-                    <div class="error error-text">Username can't be blank</div>
+                    <div class="error error-text"></div>
                 </div>
                 <div class="field password">
                     <div class="input-area">
@@ -149,9 +149,9 @@
                         <i class = "icon fas fa-lock"></i>
                         <i class = "error error-icon fas fa-exclamation-circle"></i>
                     </div>
-                    <div class="error error-text">Password can't be blank</div>
+                    <div class="error error-text"></div>
                 </div>
-                <input type = "submit" value = "submit" class = "submit" name="submit">
+                <input type = "submit" value = "Submit" class = "submit" name="submit">
             </form>
             <button class = "register_open register-open-button">Register?</button>
     
@@ -164,7 +164,7 @@
         <div class = "register">
             <button class = "register_close">&times;</button>
             <header>Register</header>
-            <form id = "form2" action = "./action.php" method="post" onsubmit="return registrationErrorHandler()">
+            <form id = "form2" action="./action.php" method="post">
                 <div class="field username">
                     <div class="input-area">
                         <input type = "text" id="#username" name="uid" placeholder= "USERNAME">
@@ -197,7 +197,7 @@
                     </div>
                     <div class="error error-text">Email can't be blank</div>
                 </div>
-                <button type="submit" name="submit" class="submit"></button>
+                <button type="submit" name="submit" class="submit">Submit</button>
             </form>
     
             <button class = "login-button login-open-button">Login?</button>
