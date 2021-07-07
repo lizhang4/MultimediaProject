@@ -25,6 +25,29 @@
     <section class="feature-posts  p-0 m-0 d-flex flex-column align-items-center justify-content-center">
         <div class="upper-box d-flex justify-content-between align-items-center ">
             <h4>Exhibition</h4>
+            <div class="d-flex p-0 m-0 justify-content-center align-items-center">
+                <h4 class="m-0 px-3">Select: </h4>
+                <div class="select-box d-flex flex-column p-0 m-0 justify-content-center align-items-end">
+                    
+                    <div class="options-container order-1 p-0 m-0">
+                        <div class="option">
+                            <input type="radio" class="radio" id="all" name="category" data-filter="All">
+                            <label for="all" class="px-1">All Exhibitions</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="ongoing" name="category" data-filter="Ongoing">
+                            <label for="ongoing" class="px-1">Ongoing Exhibitions</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="past" name="category" data-filter="Past">
+                            <label for="past" class="px-1">Past Exhibitions</label>
+                        </div>
+                        
+                    </div>
+                    <div class="selected order-0 px-1 m-0 d-flex justify-content-between align-items-center">All Exhibitions <i class="fas fa-angle-down m-0 px-2 py-2"></i></div>
+                </div>
+            </div>
+            
         </div>
 
         <div class="bottom-box" id="exhibition-list">
@@ -90,8 +113,7 @@
     <!-- Filter Function -->
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.list').click(function() {
-                console.log("click");
+            $('.radio').click(function() {
                 const value = $(this).attr('data-filter');
                 if (value == 'All') {
                     $('.itembox').show('1000');
@@ -99,15 +121,21 @@
                 else {
                     $('.itembox').not('.'+value).hide('1000');
                     $('.itembox').filter('.'+value).show('1000');
-
                 }
+                
+                // $('.dynasty-info').each(function() {
+                //     if($(this).hasClass(value)) {
+                //         $(this).show();
+                //     }
+                //     else {
+                //         $(this).hide();
+                //     }
+                // });
 
-                $(this).addClass('active').siblings().removeClass('active');
+
+                $(this).addClass('active').siblings().removeClass('active'); 
                 
             });
-
-            
-
         });
 
     </script>

@@ -72,7 +72,7 @@ nav {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 5;
     background-color: white;
 
 
@@ -159,6 +159,8 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     height: 100%;
     width: 100%;
     background-color: #0C0C0C;
+    
+
     
 }
 
@@ -272,6 +274,8 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     max-width: 1150px;
     height: 600px !important;
     background-color: #0C0C0C;
+    box-shadow: 0px 15px 45px 5px rgba(0, 0, 0, 0.30);
+
     
 }
 
@@ -327,7 +331,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 
 /* Feature-posts Section */
 .feature-posts {
-    min-height: fit-content;
+    height: fit-content;
     width: 95%; 
     max-width: 1150px;
     margin: 0px auto !important;
@@ -444,6 +448,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     width: 100%;
     transition: 0.3s ease-in-out;
     object-fit: cover;
+
 
 }
 
@@ -600,6 +605,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 
 .exhibition-carousel .exibition-item-container .information p {
     margin-bottom: 50px;
+    text-align: justify;
 }
 
 .exhibition-carousel .exibition-item-container .information a {
@@ -914,19 +920,23 @@ footer .social-media-container a:hover {
         height: 75% !important;
     }
 
+    footer .social-media-container .pages-link a{
+        margin-left: 30px;
+        color: #1d1d1d;
+        transition: all 0.3s ease-in-out;
+    
+    }
+
+    footer .social-media-container .pages-link a:nth-child(1) {
+        margin-left: 0;
+    }
+
     
 
-    footer .lower-box .right-container {
-        height: 50%;
-    }
+    
 
-    footer .lower-box .right-container img {
-        min-width: 100%;
-        max-width: 100%;
-        min-height: 90%;
-        max-height: 100%;
-        object-fit: cover;
-    }
+    
+    
 }
 
 

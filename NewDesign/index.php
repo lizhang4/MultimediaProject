@@ -10,33 +10,22 @@
 
     <!-- TOP Carousel Section -->
     <section class="top-carousel d-flex justify-content-center align-items-center">
-           <div class="swiper-container topSwiper w-100 h-100">
+           <div class="swiper-container topSwiper w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                <div class="swiper-wrapper w-100 h-100 border ">
                    <div class="swiper-slide item d-flex flex-column justify-content-center align-items-center">
-                       <!-- <img src="./imgs/TopCarousel.png" alt=""> -->
                        <h1 class="text-uppercase">Dynasty</h1>
                        <h5 class="text-uppercase">Weapon Museum</h5>
                        <div class="line"></div>
 
 
                    </div>
-                   <div class="swiper-slide item d-flex flex-column justify-content-center align-items-center">
-                       <!-- <img src="./imgs/TopCarousel-2.png" alt=""> -->
-                       <h1 class="text-uppercase text-center">Dynasty</h1>
-                       <h5 class="text-uppercase text-center">Weapon Museum</h5>
-                       <div class="line text-center"></div>
-
-                   </div>
-                   <div class="swiper-slide item">
-                       <img src="./imgs/荣耀战魂(For Honor) 剑客4k 游戏壁纸壁纸.jpg" alt="">
-                   </div>
                    
                </div>
     
-               <div class="swiper-pagination"></div>
+               
            </div>
     
-        </section>
+    </section>
     <!-- End TOP Carousel Section -->
 
     <!-- About Section -->
@@ -113,7 +102,7 @@
                     </div>
                     <div class="information col-md-6 col-12 d-flex flex-column justify-content-center">
                         <h1>Grand Exhibition Of Ancient Arms & Armours</h1>
-                        <p>Ancient weapons can be divided into cold weapons and fire weapons. The original purpose of cold weapons is cold and ruthless beauty, which cannot be replaced by other crafts. The complete structure of a sword, accurate control of power points, and delicate and ingenious carving decorations And so on, are the highest crystallization of the wisdom of the ancients, and also another aspect of aesthetic expression. This exhibition lays out the contents of the display on a timeline, compares the production technology of weapons in different periods, from the wood and stone weapon period to the introduction of modern art swords, etc., emphasizes the beauty of weapons through objects, shows the perfect composition of weapons in structural form, and experiences traditional culture.</p>
+                        <p>This exhibition lays out the contents of the display on a timeline, compares the production technology of weapons in different periods, from the wood and stone weapon period to the introduction of modern art swords, etc., emphasizes the beauty of weapons through objects, shows the perfect composition of weapons in structural form, and experiences traditional culture.</p>
                         <a href="./exhibition.php"><i class="fas fa-chevron-right"></i>See More</a>
                     </div>
                 </div>
@@ -211,7 +200,6 @@
             <button class = "login-button login-open-button">Login?</button>
         </div>
         <!-- End Register Form -->
-    
 </div>
 
 
@@ -230,7 +218,7 @@
                     <div class="overlay"></div>
                     <div class="info d-flex flex-column justify-content-start align-self-start">
                         <h4>{{name}}</h4>
-                        <p>{{weilder}}</p>
+                        <p>{{weaponType}}</p>
                     </div>
                 </div>
                 
@@ -271,25 +259,6 @@
     </script>
 
     <!-- End Handlebars JS template -->
-
-     <!-- Swiper JS -->
-     <script>
-        var exhibitionSwiper = new Swiper(".exhibitionSwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var topSwiper = new Swiper(".topSwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-        
-      </script>
-    <!-- End Swiper JS -->
 
     
 
