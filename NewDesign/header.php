@@ -38,16 +38,15 @@
             <div class="inner-container row p-0 ">
 
                 <div class="col-xl-4 col-lg-3 col-sm-6 col-6 logo d-flex align-items-center p-0">
-                    <!-- <a href=""><img src="./imgs/Logo.svg" alt=""></a> -->
                     <a href="./index.php"><h2>D M</h2></a>
                 </div>
                 
                 <div class="col-xl-4 col-lg-6 d-none center-nav d-lg-flex justify-content-around align-items-center ">
                     <a href="./index.php" class=" mx-4 <?= ($activePage == 'index') ? 'active':''; ?> " >Home</a>
-                    <a href="./gallery.php" class=" mx-4 <?= ($activePage == 'gallery') ? 'active' : ''; ?>">Gallery</a>
-                    <a href="./exhibition.php" class=" mx-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
-                    <a href="./visit.php" class=" mx-4 <?= ($activePage == 'visit') ? 'active' : ''; ?>">Visit</a>
-                    <a href="./about.php" class=" mx-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
+                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./gallery.php"'; ?> class=" mx-4 <?= ($activePage == 'gallery') ? 'active' : ''; ?>">Gallery</a>
+                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./exhibition.php"'; ?> class=" mx-4 <?= ($activePage == 'exhibition') ? 'active' : ''; ?>">Exhibition</a>
+                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./visit.php"'; ?> class=" mx-4 <?= ($activePage == 'visit') ? 'active' : ''; ?>">Visit</a>
+                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> class=" mx-4 <?= ($activePage == 'about') ? 'active' : ''; ?>">About</a>
                 </div>
                 <div class="col-xl-4 col-lg-3 d-none d-lg-flex justify-content-end align-items-center p-0">
                      <?php

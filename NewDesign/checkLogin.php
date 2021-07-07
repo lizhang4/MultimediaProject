@@ -1,0 +1,1 @@
+<?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?>

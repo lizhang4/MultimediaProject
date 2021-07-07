@@ -24,11 +24,17 @@ const overlay = document.getElementById("overlay");
 //     $(".register").removeClass("active");
 // });
 
+function openLoginPage() {
+    console.log("Click");
+    $(".login").addClass("active");
+    $(".register").removeClass("active");
+}
+
 $(".login-button").click(function () {
     $(".login").addClass("active");
     $(".register").removeClass("active");
-
 });
+
 
 $(".register_open").click(function () {
     $(".register").addClass("active")

@@ -27,12 +27,15 @@
     
     </section>
     <!-- End TOP Carousel Section -->
-
     <!-- About Section -->
+
+    <script>
+
+    </script>
         <section class="about">
             <div class="upper-box d-flex  justify-content-between align-items-center ">
                 <h4>About</h4>
-                <a href="./about.php" class="d-flex align-items-center justify-content-around">
+                <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> class="d-flex align-items-center justify-content-around" >
                     <i class="fas fa-chevron-right"></i>
                     <h4>See More</h4>
                 </a>
@@ -49,7 +52,7 @@
                     </div>
                     <h1 class="text-uppercase text-center">Dynasty Museum</h1>
                     <p class="">The principal goals of the Dynasty Museum are to collect, preserve, research, publish, and exhibit distinguished examples representing the art of the ancient chinese cold-weapons. Ancient chinese cold-weapons have been a vital part of the chinese cultures for thousands of years, pivotal not only in conquest and defense, but also in court pageantry and ceremonial events.</p>
-                    <a href="./about.php">See More</a>
+                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> style="color:white;">See More</a>
                 </div>
                 <div class="col-0 col-md-1"></div>
             
@@ -66,7 +69,7 @@
         <section class="feature-posts  p-0 m-0 d-flex flex-column align-items-center justify-content-center">
             <div class="upper-box d-flex justify-content-between align-items-center ">
                 <h4>Feature Posts</h4>
-                <a href="./gallery.php" class="d-flex align-items-center justify-content-around">
+                <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./gallery.php"'; ?> class="d-flex align-items-center justify-content-around">
                     <i class="fas fa-chevron-right"></i>
                     <h4>See More</h4>
                 </a>
@@ -87,7 +90,7 @@
         <section class="exhibition-carousel p-0 m-0 d-flex flex-column align-items-center justify-content-center">
             <div class="upper-box d-flex justify-content-between align-items-center ">
                 <h4>Recent Exhibitions</h4>
-                <a href="exhibition.php" class="d-flex align-items-center justify-content-around">
+                <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./exhibition.php"'; ?> class="d-flex align-items-center justify-content-around">
                     <i class="fas fa-chevron-right"></i>
                     <h4>See More</h4>
                 </a>
@@ -103,7 +106,7 @@
                     <div class="information col-md-6 col-12 d-flex flex-column justify-content-center">
                         <h1>Grand Exhibition Of Ancient Arms & Armours</h1>
                         <p>This exhibition lays out the contents of the display on a timeline, compares the production technology of weapons in different periods, from the wood and stone weapon period to the introduction of modern art swords, etc., emphasizes the beauty of weapons through objects, shows the perfect composition of weapons in structural form, and experiences traditional culture.</p>
-                        <a href="./exhibition.php"><i class="fas fa-chevron-right"></i>See More</a>
+                        <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./exhibition.php"'; ?>><i class="fas fa-chevron-right"></i>See More</a>
                     </div>
                 </div>
 
@@ -111,7 +114,7 @@
                     <div class="information order-1 order-md-0 col-md-6 col-12 d-flex flex-column justify-content-center">
                         <h1>Exhibition of Ancient Chinese Cold Weapons</h1>
                         <p>This exhibition will exhibit 187 ancient weapons from more than 30 collectors across the country, dating from the Shang and Zhou Dynasties to modern times. The materials include bronze and iron. The types cover ritual weapons and actual combat weapons. It fully demonstrates the development of ancient Chinese cold weapons process.</p>
-                        <a href="./exhibition.php"><i class="fas fa-chevron-right"></i>See More</a>
+                        <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./exhibition.php"'; ?>><i class="fas fa-chevron-right"></i>See More</a>
                     </div>
                     <div class="img col-md-6 col-12 order-0 order-md-1">
                         <div class="content">
