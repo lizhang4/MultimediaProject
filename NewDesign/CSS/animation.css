@@ -78,13 +78,13 @@
     visibility: visible;
 }
 
-.nav {
-    height: 10vh;
-}
+/* .nav {
+    height: 7vh;
+} */
 
 .navExpand {
     animation-name: navExpand;
-    animation-duration: 0.7s;
+    animation-duration: 1s;
     height: 15vh;
 }
 
@@ -92,6 +92,45 @@
     animation-name: navShrink;
     animation-duration: 0.5s;
     height: 10vh;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    nav .nav-container {
+        height: 8vh;
+    }
+
+    .navExpand {
+        animation-name: navExpandPhone;
+        animation-duration: 1s;
+        height: 10vh;
+    }
+    
+    .navShrink {
+        animation-name: navShrinkPhone;
+        animation-duration: 0.5s;
+        height: 8vh;
+    }
+
+    @keyframes navExpandPhone {
+        0% {
+            height: 8vh;
+        }
+
+        100% {
+            height: 10vh;
+        }
+    }
+    
+    @keyframes navShrinkPhone {
+        0% {
+            height: 10vh;
+        }
+        100% {
+            height: 8vh;
+        }
+    }
 }
 
 @keyframes slide {
@@ -126,6 +165,30 @@
         height: 10vh;
     }
 }
+
+
+/* @keyframes navExpand {
+    0% {
+        height: 10vh;
+    }
+
+    30% {
+        height: 11vh;
+    }
+    100% {
+        height: 15vh;
+    }
+}
+
+@keyframes navShrink {
+    0% {
+        height: 15vh;
+    }
+    100% {
+        height: 10vh;
+    }
+} */
+
 
 
 

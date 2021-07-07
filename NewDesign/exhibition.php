@@ -15,8 +15,9 @@
 
     <!-- Exhibition Page Carousel Section -->
     <section  class=" gallery-carousel d-flex flex-column">
-        <img src="./imgs/Exhibition3.png" alt="">
+        <img src="./imgs/ExCarousel2.png" alt="">
         <h4>Welcome to exhibition page</h4>
+        <p>Ancient weapons can be divided into cold weapons and fire weapons. The original purpose of cold weapons is cold and ruthless beauty, which cannot be replaced by other crafts. In this page, we are bring you the latest information about ancient chinese weapon exhibition that is being organised in Malaysia. Check out the list of exhibitions below to learn more about them.</p>
     </section>
     <!-- End Exhibition Page Carousel Section -->
 
@@ -24,7 +25,7 @@
     <!-- Exhibition Posts Section -->
     <section class="feature-posts  p-0 m-0 d-flex flex-column align-items-center justify-content-center">
         <div class="upper-box d-flex justify-content-between align-items-center ">
-            <h4>Exhibition</h4>
+            <h4 class="my-2">Exhibition</h4>
             <div class="d-flex p-0 m-0 justify-content-center align-items-center">
                 <h4 class="m-0 px-3">Select: </h4>
                 <div class="select-box d-flex flex-column p-0 m-0 justify-content-center align-items-end">
@@ -64,7 +65,7 @@
     <!-- Handlebar JS -->
     <script id="exhibition-card-template" type="text/x-handlebars-template">
         {{#each exhibitions}}
-            <a href="" class="image itembox slideup" data-bs-toggle="modal" data-bs-target="#exhibition{{@index}}" >
+            <a class="image itembox slideup {{ongoing}}" data-bs-toggle="modal" data-bs-target="#exhibition{{@index}}" >
                 <div class="content">
                     <img src="{{imageUrl}}" alt="">
                     <div class="overlay"></div>

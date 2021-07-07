@@ -11,7 +11,7 @@
     <!-- TOP Carousel Section -->
     <section class="top-carousel d-flex justify-content-center align-items-center">
            <div class="swiper-container topSwiper w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-               <div class="swiper-wrapper w-100 h-100 border ">
+               <div class="swiper-wrapper w-100 h-100">
                    <div class="swiper-slide item d-flex flex-column justify-content-center align-items-center">
                        <h1 class="text-uppercase">Dynasty</h1>
                        <h5 class="text-uppercase">Weapon Museum</h5>
@@ -48,7 +48,7 @@
                         <img src="./imgs/aboutSword.png" alt="">
                     </div>
                     <h1 class="text-uppercase text-center">Dynasty Museum</h1>
-                    <p class="text-center">The principal goals of the Dynasty Museum are to collect, preserve, research, publish, and exhibit distinguished examples representing the art of the ancient chinese cold-weapons. Ancient chinese cold-weapons have been a vital part of the chinese cultures for thousands of years, pivotal not only in conquest and defense, but also in court pageantry and ceremonial events.</p>
+                    <p class="">The principal goals of the Dynasty Museum are to collect, preserve, research, publish, and exhibit distinguished examples representing the art of the ancient chinese cold-weapons. Ancient chinese cold-weapons have been a vital part of the chinese cultures for thousands of years, pivotal not only in conquest and defense, but also in court pageantry and ceremonial events.</p>
                     <a href="./about.php">See More</a>
                 </div>
                 <div class="col-0 col-md-1"></div>
