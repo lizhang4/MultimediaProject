@@ -120,12 +120,9 @@ iframe {
 }
 
 
-.feature-posts .dynasty-info {
-    display: none;
-}
-
-.feature-posts .dynasty-info.active {
-    display: block;
+.feature-posts .info-container {
+    position: relative;
+    /* height: 200p; */
 }
 
 @media only screen and (max-width: 992px) {

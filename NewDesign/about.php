@@ -37,10 +37,12 @@
                 <h4 class="m-0 p-0 col-lg-2 col-md-2 col-12 text-center text-md-start my-3">FAQ</h4>
                 <div class="col-lg-4 col-md-2 col-0"></div>
                 <div class="col-lg-6 col-md-8 col-12" >
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem ullam dignissimos? Iste, error harum. Alias quae voluptatibus iure, illum iusto veritatis dolores aut veniam dolorum, vitae enim temporibus eum?</p>
+                    <p style="font-weight: 600; color: black">Do you have a physical centre?</p>
+                    <p>Yes, we do have a physical centre. Find out more by clicking <a href="./visit.php" style="font-weight: 700;">here</a></p>
+                    <p style="font-weight: 600; color: black">Do you host all the exhibition in your centre?</p>
+                    <p>No, we do host some exhibition from time to time but most of the exhibitions are from other places.</p>
+                    <p style="font-weight: 600; color: black">How can I buy a ticket to the exhibition?</p>
+                    <p>Ticket purchasing is not available on our page yet. However you can purchase it by searching for the keywords on google.</p>
     
                 </div>
 

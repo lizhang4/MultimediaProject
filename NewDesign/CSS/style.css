@@ -163,11 +163,11 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
   
   @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #023fc2, 0 0 40px #023fc2, 0 0 50px #023fc2;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #023fc2;
     }
     
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #2d75fa, 0 0 40px #2d75fa, 0 0 50px #2d75fa, 0 0 60px #2d75fa;
+      text-shadow: 0 0 20px #fff, 0 0 30px #2d75fa, 0 0 40px #2d75fa;
     }
   }
 

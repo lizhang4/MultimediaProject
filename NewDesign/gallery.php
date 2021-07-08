@@ -66,7 +66,7 @@
         </div>
 
         <div class="info-container">
-            <div class="dynasty-info All active">
+            <div class="dynasty-info All">
                 <h4>Representative weapons of each dynasty</h4>
                 <p>The history of the knife can be traced back to the Stone Age. At that time, people made knives and used them as tools. Various forms of knives play many roles in production and life. In the civilized society, although the knife as a tool showed a wide range of functions, it also appeared in the war and played the role of a killing weapon. In ancient China, swords have experienced the development of the age of bronze, steel and firearms. They have been active on the social stage in different forms and roles. They have played an important role in maintaining the fortune of the country and developed world-famous sword skills. The bronze swords of the Warring States period, the ring-sword swords of the Han Dynasty, the Mo swords of the Tang Dynasty and the waist swords of the Ming Dynasty all played a frightening role in the history of war. At the end of the Qing Dynasty, with the end of the cold weapon era, the sword withdrew from the battlefield.</p>
             </div>
@@ -87,22 +87,22 @@
             </div>
 
             <div class="dynasty-info Tang ">
-                <h4>Sui Sword and Tang Sword-the heyday of Chinese sword</h4>
+                <h4>Sui weapons and Tang weapon-the heyday of Chinese weapons</h4>
                 <p>During the Sui and Tang Dynasties, the Chinese sword culture entered its heyday without history. In the Tang Dynasty, new sword styles were developed from the ring head sword and the long sword of the Han Dynasty. In addition to the short-handled yi knife, barrier knife and horizontal knife, a long-handled "mo knife" was also developed, which was extremely powerful. Strong. Infantry troops lined up in front of the formation in a horizontally dense formation, "advancing like a wall," and played a key role in the war against the nomads. Tang Dao, as a peak in the development of China's cold weapons, not only accompanied the establishment, prosperity, sorrows and joys of the Tang Empire, but also affected the entire Asian cold weapons culture.</p>
             </div>
 
             <div class="dynasty-info Song ">
-                <h4>The development of steel weapons in the Three Kingdoms, Two Jins, Southern and Northern Dynasties</h4>
+                <h4>Weapons in the Song and Yuan Dynasties - a mature form</h4>
                 <p>The Song Dynasty entered an era when cold and hot weapons were used together, and cold weapons still prevailed. The knife is the main combat weapon. The knives of the Song and Yuan dynasties have used the skill of clamping steel, and have absorbed the style of the northwest minority, and the shape has been improved. The long knife has a slightly curved body, a wider head, a thick ridge and a thin blade, and the narrow and long square head is also changed to a sharp front and oblique shape with a guard. Judging from the unearthed cultural relics and ancient books, there were many long-handled iron knives suitable for actual combat during this period, and short-handled weapons were used in conjunction with long knives to break the enemy’s iron armor. At this time, swords were rarely used in the army, mainly for officers to wear and command. During the Yuan Dynasty, long-handled knives were gradually reduced in the army, and sabers were mostly used immediately, mainly in the form of ring knives and scimitars.</p>
             </div>
 
             <div class="dynasty-info Ming ">
-                <h4>The development of steel weapons in the Three Kingdoms, Two Jins, Southern and Northern Dynasties</h4>
+                <h4>Weapons of the Ming Dynasty-Chinese weapons in decline</h4>
                 <p>Although the firearms of the Ming Dynasty gradually matured, they did not reach the level of complete practicality. Therefore, knives were still the basic equipment of infantry. The main types included waist knives, long knives and short knives. In the late Ming Dynasty, the waist sword became the standard weapon of the army. In addition to the inheritance of Song and Yuan, there is another type of imitation of Japanese swords. This kind of knife has a long and narrow shape with a beautiful curved arc. The joint between the guard and the blade is equipped with a swallow mouth, with a long face and a short back, which can increase the strength of the knife. The influence of the Japanese sword is also shown on the long sword, which is about 2 meters long, has a long handle, and is easily held by both hands. It is used by infantry and has great lethality.</p>
             </div>
 
             <div class="dynasty-info Qing ">
-                <h4>The development of steel weapons in the Three Kingdoms, Two Jins, Southern and Northern Dynasties</h4>
+                <h4>Weapons in the Qing Dynasty-the last glory of Chinese weapons</h4>
                 <p>The Qing army used both cold weapons and firearms in combat, and the standard saber was the main weapon for close combat. Historically, the Qing Dynasty saw the largest number of swords, the most complete varieties, the most stringent levels, and the most complete functions. Standard sabers include Shun Dao, Wo Dao, Zha Dao, Piao Dao, and Chop Sabre. The emperor and officials have their own sabers. There are various forms of folk knives, such as waist knives, lancets, goose ling knives, thick-back machete, etc. for single knives. With the invasion of Western powers, Chinese cold weapons and old-style firearms were replaced by Western swords and modern guns, marking the beginning of the withdrawal of Chinese swords from the war arena.</p>
             </div>
 
@@ -171,6 +171,13 @@
     <!-- Filter Function -->
     <script type="text/javascript">
         $(document).ready(function () {
+
+            $('.dynasty-info').each(function() {
+                $(this).fadeOut();
+            });
+
+            $(".info-container").children(".All").fadeIn();
+
             $('.radio').click(function() {
                 const value = $(this).attr('data-filter');
                 if (value == 'All') {
@@ -181,12 +188,11 @@
                     $('.itembox').filter('.'+value).show('1000');
                 }
                 
+                $(".dynasty-info").fadeOut('1000')
+                
                 $('.dynasty-info').each(function() {
                     if($(this).hasClass(value)) {
-                        $(this).show();
-                    }
-                    else {
-                        $(this).hide();
+                        $(this).fadeIn('1000');
                     }
                 });
 
