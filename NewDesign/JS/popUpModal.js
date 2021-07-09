@@ -3,14 +3,6 @@
 
 $(Document).ready(function() {
     $(".fa-caret-up").hide();
-    
-    
-    // console.log("123");
-    // if ($(".information").scrollTop + $(".information").innerHeight() > $(".information")[0].scrollHeight -1) {
-    //     $(".fa-caret-down").hide();
-
-    // }
-        
         
         $(".information").scroll(function () { 
             var y = $(this).scrollTop();

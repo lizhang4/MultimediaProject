@@ -10,55 +10,46 @@
 
     <!-- TOP Carousel Section -->
     <section class="top-carousel d-flex justify-content-center align-items-center">
-           <div class="swiper-container topSwiper w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-               <div class="swiper-wrapper w-100 h-100">
-                   <div class="swiper-slide item d-flex flex-column justify-content-center align-items-center">
-                       <h1 class="text-uppercase glow">Dynasty</h1>
-                       <h5 class="text-uppercase">Weapon Museum</h5>
-                       <div class="line"></div>
-
-
-                   </div>
-                   
-               </div>
-    
-               
-           </div>
-    
+        <div class="swiper-container topSwiper w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <div class="swiper-wrapper w-100 h-100">
+                <div class="swiper-slide item d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="text-uppercase glow">Dynasty</h1>
+                    <h5 class="text-uppercase">Weapon Museum</h5>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End TOP Carousel Section -->
+
     <!-- About Section -->
-
-    <script>
-
-    </script>
-        <section class="about">
-            <div class="upper-box d-flex  justify-content-between align-items-center ">
-                <h4>About</h4>
-                <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> class="d-flex align-items-center justify-content-around" >
-                    <i class="fas fa-chevron-right"></i>
-                    <h4>See More</h4>
-                </a>
-            </div>
-            <div class="lower-box row d-flex justify-content-around align-items-center h-100 w-100 m-0 p-0 slideup">
-                <div class="d-none d-md-flex col-md-6 flex-column align-items-center justify-content-center h-100">
-                    <div class="img">
-                        <img src="./imgs/aboutSword.png" alt="">
-                    </div>
+    <section class="about">
+        <div class="upper-box d-flex  justify-content-between align-items-center ">
+            <h4>About</h4>
+            <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> class="d-flex align-items-center justify-content-around" >
+                <i class="fas fa-chevron-right"></i>
+                <h4>See More</h4>
+            </a>
+        </div>
+        <div class="lower-box row d-flex justify-content-around align-items-center h-100 w-100 m-0 p-0 slideup">
+            <div class="d-none d-md-flex col-md-6 flex-column align-items-center justify-content-center h-100">
+                <div class="img">
+                    <img src="./imgs/aboutSword.png" alt="">
                 </div>
-                <div class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center h-100">
-                    <div class="img d-block d-md-none">
-                        <img src="./imgs/aboutSword.png" alt="">
-                    </div>
-                    <h1 class="text-uppercase text-center">Dynasty Museum</h1>
-                    <p class="">The principal goals of the Dynasty Museum are to collect, preserve, research, publish, and exhibit distinguished examples representing the art of the ancient chinese cold-weapons. Ancient chinese cold-weapons have been a vital part of the chinese cultures for thousands of years, pivotal not only in conquest and defense, but also in court pageantry and ceremonial events.</p>
-                    <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> >See More</a>
-                </div>
-                <div class="col-0 col-md-1"></div>
-            
-            
             </div>
-        </section>
+            <div class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center h-100">
+                <div class="img d-block d-md-none">
+                    <img src="./imgs/aboutSword.png" alt="">
+                </div>
+                <h1 class="text-uppercase text-center">Dynasty Museum</h1>
+                <p class="">The principal goals of the Dynasty Museum are to collect, preserve, research, publish, and exhibit distinguished examples representing the art of the ancient chinese cold-weapons. Ancient chinese cold-weapons have been a vital part of the chinese cultures for thousands of years, pivotal not only in conquest and defense, but also in court pageantry and ceremonial events.</p>
+                <a <?= (empty($_SESSION['username'])) ? 'onclick="openLoginPage()"' : 'href="./about.php"'; ?> >See More</a>
+            </div>
+            <div class="col-0 col-md-1"></div>
+        
+        
+        </div>
+    </section>
 
 
 
@@ -130,84 +121,80 @@
     
     
     
-        <!-- Login Form -->
-        <div class = "login">
-            <button class = "login_close">&times;</button>
-            <header>Login</header>
-            <form id = "form1" action = "./action.php" method="POST">
-                <div class="field username">
-                    <div class="input-area">
-                        <input type = "text" placeholder= "USERNAME" name="username">
-                        <i class = "icon fas fa-user-alt"></i>
-                        <i class = "error error-icon fas fa-exclamation-circle"></i>
-                    </div>
-                    <div class="error error-text"></div>
+    <!-- Login Form -->
+    <div class = "login">
+        <button class = "login_close">&times;</button>
+        <header>Login</header>
+        <form id = "form1" action = "./action.php" method="POST">
+            <div class="field username">
+                <div class="input-area">
+                    <input type = "text" placeholder= "USERNAME" name="username">
+                    <i class = "icon fas fa-user-alt"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="field password">
-                    <div class="input-area">
-                        <input type = "password" placeholder= "PASSWORD" name="password">
-                        <i class = "icon fas fa-lock"></i>
-                        <i class = "error error-icon fas fa-exclamation-circle"></i>
-                    </div>
-                    <div class="error error-text"></div>
+                <div class="error error-text"></div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type = "password" placeholder= "PASSWORD" name="password">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <input type = "submit" value = "Submit" class = "submit" name="submit">
-            </form>
-            <button class = "register_open register-open-button">Register?</button>
+                <div class="error error-text"></div>
+            </div>
+            <input type = "submit" value = "Submit" class = "submit" name="submit">
+        </form>
+        <button class = "register_open register-open-button">Register?</button>
+
+
+    </div>
+    <!-- End Login Form -->
     
     
-        </div>
-        <!-- End Login Form -->
-    
-    
-        <!-- Register Form -->
-        <div class = "register">
-            <button class = "register_close">&times;</button>
-            <header>Register</header>
-            <form id = "form2" action="./action.php" method="post">
-                <div class="field username">
-                    <div class="input-area">
-                        <input type = "text" id="#username" name="uid" placeholder= "USERNAME">
-                        <i class = "icon fas fa-user-alt"></i>
-                        <i class = "error error-icon fas fa-exclamation-circle"></i>
-                    </div>
-                    <div class="error error-text error-text-username"></div>
+    <!-- Register Form -->
+    <div class = "register">
+        <button class = "register_close">&times;</button>
+        <header>Register</header>
+        <form id = "form2" action="./action.php" method="post">
+            <div class="field username">
+                <div class="input-area">
+                    <input type = "text" id="#username" name="uid" placeholder= "USERNAME">
+                    <i class = "icon fas fa-user-alt"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="field password">
-                    <div class="input-area">
-                        <input type = "password" name="pwd" placeholder= "PASSWORD">
-                        <i class = "icon fas fa-lock"></i>
-                        <i class = "error error-icon fas fa-exclamation-circle"></i>
-                    </div>
-                    <div class="error error-text">Password can't be blank</div>
+                <div class="error error-text error-text-username"></div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type = "password" name="pwd" placeholder= "PASSWORD">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="field repassword">
-                    <div class="input-area">
-                        <input type = "password" name="pwdrepeat" placeholder= "RE-ENTER PASSWORD">
-                        <i class = "icon fas fa-lock"></i>
-                        <i class = "error error-icon fas fa-exclamation-circle"></i>
-                    </div>
-                    <div class="error error-text">Password can't be blank</div>
+                <div class="error error-text">Password can't be blank</div>
+            </div>
+            <div class="field repassword">
+                <div class="input-area">
+                    <input type = "password" name="pwdrepeat" placeholder= "RE-ENTER PASSWORD">
+                    <i class = "icon fas fa-lock"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="field email">
-                    <div class="input-area">
-                        <input type = "text" name="email" placeholder= "EMAIL">
-                        <i class = "icon fas fa-envelope"></i>
-                        <i class = "error error-icon fas fa-exclamation-circle"></i>
-                    </div>
-                    <div class="error error-text">Email can't be blank</div>
+                <div class="error error-text">Password can't be blank</div>
+            </div>
+            <div class="field email">
+                <div class="input-area">
+                    <input type = "text" name="email" placeholder= "EMAIL">
+                    <i class = "icon fas fa-envelope"></i>
+                    <i class = "error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <button type="submit" name="submit" class="submit">Submit</button>
-            </form>
-    
-            <button class = "login-button login-open-button">Login?</button>
-        </div>
-        <!-- End Register Form -->
+                <div class="error error-text">Email can't be blank</div>
+            </div>
+            <button type="submit" name="submit" class="submit">Submit</button>
+        </form>
+
+        <button class = "login-button login-open-button">Login?</button>
+    </div>
+    <!-- End Register Form -->
 </div>
-
-
-
-   
 
 
 

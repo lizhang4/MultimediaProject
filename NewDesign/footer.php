@@ -23,6 +23,7 @@
 </footer>
 
 
+<!-- Login signup and logout validation -->
 <script src="./JS/logSign.js"></script>
     
     <script>
@@ -146,6 +147,8 @@
         
         
     </script>
+<!-- End login signup and logout validation -->
+
     
     <script src="./JS/script.js"></script>
     <script src="./JS/exhibition.js"></script>
