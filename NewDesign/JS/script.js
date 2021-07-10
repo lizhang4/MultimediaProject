@@ -1,3 +1,5 @@
+// This file stores information about our gallery page
+
 /// <reference path="../../typings/globals/jquery/index.d.ts" />
 
 Handlebars.registerHelper('lesserThan', function (v1, v2, options) {

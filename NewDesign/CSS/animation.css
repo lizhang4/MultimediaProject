@@ -1,5 +1,6 @@
+/* This page controls the css of most of the webpage animations */
 
-
+/* Navbar Hamburger Section */
 #nav-open {
     display: inline-flex;
     width: 20px;
@@ -37,15 +38,7 @@
     left: 0;
 }
 
-/* #nav-open:hover .btn-line:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-#nav-open:hover .btn-line:nth-child(3) {
-    bottom: 50%;
-    transform: translateY(50%);
-} */
 
 #nav-open.is-active .btn-line:nth-child(1){
     top: 50%;
@@ -61,9 +54,12 @@
     transform: translateY(50%) rotate(45deg);
 }
 
+/* End Navbar Hamburger Section */
 
 
 
+
+/* Sliding animation for most of our elements */
 .slideup {
     visibility: hidden;
 }
@@ -73,11 +69,10 @@
     animation-duration: 1s;
     visibility: visible;
 }
+/* End sliding animation for most of our elements */
 
-/* .nav {
-    height: 7vh;
-} */
 
+/* Shrink and Expand animation for our navbar */
 .navExpand {
     animation-name: navExpand;
     animation-duration: 1s;
@@ -89,6 +84,9 @@
     animation-duration: 0.5s;
     height: 10vh;
 }
+
+/* End Shrink and Expand animation for our navbar */
+
 
 
 

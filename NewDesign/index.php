@@ -1,3 +1,6 @@
+<!-- This is the file for Index Page -->
+
+
 <?php
     session_start();
 ?>

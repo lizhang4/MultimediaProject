@@ -1,3 +1,6 @@
+<!-- This is footer section that would be used in all pages -->
+<!-- This file also included with login, register and logout script -->
+
 <footer class=" p-0 d-flex flex-column align-items-center justify-content-start">
             
         <div class="col-12 order-2 social-media-container d-flex flex-column flex-md-row justify-content-between align-items-center">

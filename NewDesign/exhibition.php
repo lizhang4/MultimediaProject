@@ -1,3 +1,6 @@
+<!-- This is the file for Exhibition Page -->
+
+
 <?php
     session_start();
     if(empty($_SESSION['username']) || $_SESSION['username'] == '') {

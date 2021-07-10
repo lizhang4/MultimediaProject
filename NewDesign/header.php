@@ -1,3 +1,5 @@
+<!-- This is header section that would be used in all pages -->
+
 <?php
     $activePage = basename($_SERVER['PHP_SELF'], ".php");
 ?>
@@ -20,7 +22,6 @@
     <link rel="stylesheet" href="./CSS/popUpModal.css">
     <title>Dynasty Museum</title>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2cb5c720d7.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>

@@ -1,3 +1,5 @@
+/* This file controls the login and register function css */
+
 .login, .register{
     position: fixed;
     width: 380px;

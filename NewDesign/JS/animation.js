@@ -1,3 +1,5 @@
+// This file control most of the animations of our webpage
+
 /// <reference path="../../typings/globals/jquery/index.d.ts" />
 
 $(Document).ready(function() {

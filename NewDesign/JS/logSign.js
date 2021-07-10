@@ -1,3 +1,5 @@
+//This file manage the front end validation of login and register
+
 /// <reference path="../../typings/globals/jquery/index.d.ts" />
 
 

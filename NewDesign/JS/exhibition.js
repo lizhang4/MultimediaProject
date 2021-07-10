@@ -1,3 +1,6 @@
+// This file stores information of the exhibition page
+
+
 /// <reference path="../../typings/globals/jquery/index.d.ts" />
 
 

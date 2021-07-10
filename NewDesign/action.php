@@ -1,3 +1,5 @@
+<!-- This file manage the backend of our page mainly the login, register and logout function and connects it to our database -->
+
 <?php
     session_start();
 
