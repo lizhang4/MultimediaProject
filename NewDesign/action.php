@@ -42,21 +42,6 @@
                 }
             }
         }
-        // elseif(!empty($username) || !empty($password))
-        // {
-        //     if(!empty($username))
-        //     {
-        //         echo '4';//password is blank
-        //     }
-        //     else
-        //     {
-        //         echo '5';//username is blank
-        //     }
-        // }
-        // else
-        // {
-        //     echo '6';//both are blank
-        // }
     }
 
     //logout
@@ -93,10 +78,6 @@
             {
                 echo '3';//password not match
             }
-        }
-        else
-        {
-            // echo '4';//field are required
         }
     }
 ?>
