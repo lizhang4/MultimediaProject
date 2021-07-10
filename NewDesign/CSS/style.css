@@ -136,7 +136,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .top-carousel {
     height: 55vw;
     width: 95%;
-    margin: 10vh auto !important;
+    margin: 13vh auto !important;
 }
 
 
@@ -387,7 +387,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .upper-box h4:nth-child(1) {
-    color: #1d1d1d;
+    color: black;
 }
 
 .feature-posts .upper-box i{
@@ -397,7 +397,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 }
 
 .feature-posts .upper-box a {
-    color: #1d1d1d !important; 
+    color: black !important; 
     transition: color 0.3s ease-out;
 
 }
@@ -493,7 +493,10 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
     font-weight: 400;
     letter-spacing: 0.07rem;
 
-    color: #1d1d1d;
+    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
     margin: 0;
 
 }
@@ -501,7 +504,7 @@ nav .nav-container .center-nav a:hover, nav .nav-container button:hover {
 .feature-posts .bottom-box .image .info p {
     font-size: 0.8rem;
     font-weight: 300;
-    color: #1d1d1d;
+    color: black;
     margin: 0;
 }
 
@@ -830,7 +833,7 @@ footer .social-media-container a:hover {
     .top-carousel {
         height: 70vw;
         width: 100%;
-        margin: 10vh auto !important;
+        margin: 12vh auto !important;
     }
 
     .top-carousel .item {
@@ -901,7 +904,7 @@ footer .social-media-container a:hover {
     .top-carousel {
         height: 100vw;
         width: 100%;
-        margin: 10vh auto !important;
+        margin: 11vh auto !important;
     }
 
     .top-carousel .item {

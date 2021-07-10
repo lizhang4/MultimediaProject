@@ -119,7 +119,6 @@
 
 </div>
 
-
     <!-- Handlebars JS -->
     <script id="weapon-card-template" type="text/x-handlebars-template">
         {{#each weapons}}

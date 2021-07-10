@@ -162,6 +162,24 @@
     }
 }
 
+@keyframes navShrinkSmall {
+    0% {
+        height: 11vh;
+    }
+    100% {
+        height: 10vh;
+    }
+}
+
+@keyframes navExpandSmall {
+    0% {
+        height: 10vh;
+    }
+    100% {
+        height: 11vh;
+    }
+}
+
 
 /* @keyframes navExpand {
     0% {
